@@ -27,13 +27,18 @@ body h4 {
   font-size: 75%;
 }
 
-body p, body li {
+body p,
+body li {
   font-family: sans-serif;
 }
 
 body header {
   width: 100%;
   display: inline-block;
+}
+
+body header p {
+  line-height: 1.3em;
 }
 
 body .mainSeparator {

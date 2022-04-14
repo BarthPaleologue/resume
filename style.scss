@@ -1,37 +1,49 @@
 body {
     width: 21cm;
-    height: 29.7cm;   
+    height: 29.7cm;
     margin: 0px auto;
     padding: 20px;
+
     h1 {
         font-family: sans-serif;
         font-size: 320%;
         margin-block-start: 0.2em;
     }
+
     h2 {
         font-family: sans-serif;
     }
+
     h3 {
         font-family: sans-serif;
         margin-block-end: 0.3em;
     }
+
     h4 {
         font-family: sans-serif;
         margin-block: 0;
-        color: rgb(70,70,70);
+        color: rgb(70, 70, 70);
         font-size: 75%;
     }
-    p,li {
+
+    p,
+    li {
         font-family: sans-serif;
     }
+
     header {
         width: 100%;
         display: inline-block;
+
+        p {
+            line-height: 1.3em;
+        }
     }
-    
+
     .mainSeparator {
         border: 1px solid black;
     }
+
     .subSeparator {
         border: 1px solid black;
     }
@@ -41,10 +53,10 @@ body {
         float: left;
         padding-right: 10px;
     }
+
     .rightPanel {
         width: calc(30% - 10px);
         float: right;
         padding-left: 10px;
     }
 }
-
