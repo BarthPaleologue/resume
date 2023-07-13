@@ -15,11 +15,9 @@ export default function Home() {
           <h1>Barthélemy Paléologue</h1>
         </div>
         <div className="infoPanel">
-          <p>20 Boulevard Thomas Gobert<br />
-            91120 Palaiseau<br />
+          <p>Palaiseau, France<br />
             +33 6 37 29 67 37<br />
-            <a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a><br />
-            <a href="https://barth.paleologue.fr">https://barth.paleologue.fr</a>
+            <a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a>
           </p>
         </div>
       </header>
@@ -28,7 +26,7 @@ export default function Home() {
           <section>
             <h2>Formation</h2>
             <div>
-              <h3>Ingénieur - Télécom Paris</h3>
+              <h3>Diplôme d&apos;Ingénieur - Télécom Paris</h3>
               <h4>Septembre 2021 à Juillet 2024</h4>
               <p>Formation généraliste spécialisée en graphisme et science des données.</p>
             </div>
@@ -55,7 +53,7 @@ export default function Home() {
             </div>
             <div>
               <h3>Pipeline de simulation de fluide 3D</h3>
-              <h4>Avril 2023 à Juin 2024</h4>
+              <h4>Avril 2023 à Juin 2024 à Telecom Paris</h4>
               <ul>
                 <li>Simulation du fluide 3D en C++ basé sur un papier de recherche</li>
                 <li>Utilisation de la librairie OpenVDB pour la transformation en volume</li>
@@ -64,8 +62,8 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3>Stage dans un laboratoire de recherche (LS2N)</h3>
-              <h4>Août 2022</h4>
+              <h3>Stage dans un laboratoire de recherche (<a href="http://www.ls2n.fr/">LS2N</a>)</h3>
+              <h4>Août 2022 à Nantes</h4>
               <ul>
                 <li>Coopération en méthode agile avec un chercheur</li>
                 <li>Conception d&apos;une visualisation interactive en Python</li>
@@ -74,7 +72,7 @@ export default function Home() {
             </div>
             <div>
               <h3>Application graphique de résolution de labyrinthe JAVA</h3>
-              <h4>Décembre 2021 à Février 2022</h4>
+              <h4>Décembre 2021 à Février 2022 à Telecom Paris</h4>
               <ul>
                 <li>GUI intuitive et polyvalente avec Swing</li>
                 <li>Génération de labyrinthe basée sur l&apos;algorithme de Prim</li>
@@ -82,7 +80,7 @@ export default function Home() {
             </div>
             <div>
               <h3>Sites Web pour le forum de Télécom Paris</h3>
-              <h4>Septembre 2021 à Février 2023</h4>
+              <h4>Septembre 2021 à Février 2023 à Telecom Paris</h4>
               <ul>
                 <li>Maintenance d&apos;un Frontend responsive moderne</li>
                 <li hidden>Création d&apos;un Backend Java Tomcat</li>
@@ -109,7 +107,7 @@ export default function Home() {
             </div>
             <div>
               <h3>Détection des fausses informations par IA</h3>
-              <h4>Septembre 2020 - Juin 2021</h4>
+              <h4>Septembre 2020 à Juin 2021 au Lycée Clemenceau (Nantes)</h4>
               <ul>
                 <li>Utilisation de Pandas, Numpy pour traiter les données</li>
                 <li>Conception d&apos;un réseau de neurones convolutif avec Keras</li>
@@ -118,7 +116,7 @@ export default function Home() {
             </div>
             <div hidden>
               <h3>Réseau de neurones GAN</h3>
-              <h4>Octobre 2019 - Juillet 2020</h4>
+              <h4>Octobre 2019 à Juillet 2020</h4>
               <ul>
                 <li>Manipulation d&apos;images avec Pillow</li>
                 <li>Processing des données avec numpy</li>
@@ -162,8 +160,15 @@ export default function Home() {
             <h2>Langues</h2>
             <p>Français (Natif)</p>
             <p>Anglais (C1)</p>
-            <p>Espagnol (A2)</p>
             <p>Japonais (B1)</p>
+            <p>Espagnol (A2)</p>
+          </section>
+          <section>
+            <h2>Centres d&apos;intérêt</h2>
+            <p>Piano (5 ans)</p>
+            <p>Flûte à bec (10 ans)</p>
+            <p>Jeux vidéos</p>
+            <p>Course à pied</p>
           </section>
         </div>
       </div>
