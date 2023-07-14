@@ -1,18 +1,19 @@
 header {
     width: 100%;
-    height: 140px;
+    height: 120px;
     display: flex;
     align-items: center;
     column-gap: 5px;
     margin-bottom: 5px;
 
-    background: midnightblue;
+    background: $gradient-background;
 
     padding: 10px;
     box-sizing: border-box;
 
     .picturePanel {
-        height: 100%;
+        height: 210px;
+        align-self: baseline;
 
         img {
             height: 100%;
@@ -21,25 +22,24 @@ header {
         }
     }
 
-    h1 {
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        text-align: center;
-        color: white;
-        font-size: 200%;
-        padding: 20px;
-    }
-
-    .infoPanel {
+    .namePanel {
         flex-grow: 1;
-        p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+        h1 {
+            font-family: $default-font;
+            text-align: center;
             color: white;
-            text-align: right;
-            line-height: 1.5em;
+            font-size: 300%;
             margin-block: 0;
         }
-        a {
+
+        p {
             color: white;
-            text-decoration: none;
+            margin-block: 0;
+            text-align: center;
         }
     }
 }

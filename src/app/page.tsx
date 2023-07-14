@@ -1,30 +1,14 @@
+import { Header } from './header';
 import './styles/App.scss';
-
-import profilePicture from '../../public/static/profile.jpeg';
-
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <main className='App'>
-      <header>
-        <div className="picturePanel">
-          <Image src={profilePicture} alt="Profile picture" />
-        </div>
-        <div className="namePanel">
-          <h1>Barthélemy Paléologue</h1>
-        </div>
-        <div className="infoPanel">
-          <p>Palaiseau, France<br />
-            +33 6 37 29 67 37<br />
-            <a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a>
-          </p>
-        </div>
-      </header>
+      <Header />
       <div className="panelContainer">
         <div className="leftPanel">
           <section>
-            <h2>Formation</h2>
+            <h2><span className="icon formation-icon"></span>Formation</h2>
             <div>
               <h3>Diplôme d&apos;Ingénieur - Télécom Paris</h3>
               <h4>Septembre 2021 à Juillet 2024</h4>
@@ -37,7 +21,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h2>Expérience</h2>
+            <h2><span className="icon experience-icon"></span>Expérience</h2>
             <div>
               <h3>Univers Procédural</h3>
               <h4>Depuis Juin 2021</h4>
@@ -78,7 +62,7 @@ export default function Home() {
                 <li>Génération de labyrinthe basée sur l&apos;algorithme de Prim</li>
               </ul>
             </div>
-            <div>
+            <div hidden>
               <h3>Sites Web pour le forum de Télécom Paris</h3>
               <h4>Septembre 2021 à Février 2023 à Telecom Paris</h4>
               <ul>
@@ -88,7 +72,7 @@ export default function Home() {
                 <li>Génération dynamique de PDF</li>
               </ul>
             </div>
-            <div hidden>
+            <div>
               <h3>Simulation d&apos;ondes sphériques en GLSL sur le web</h3>
               <h4>Juillet 2021</h4>
               <ul>
@@ -105,7 +89,7 @@ export default function Home() {
                 <li hidden>Création d&apos;une application d&apos;installation</li>
               </ul>
             </div>
-            <div>
+            <div hidden>
               <h3>Détection des fausses informations par IA</h3>
               <h4>Septembre 2020 à Juin 2021 au Lycée Clemenceau (Nantes)</h4>
               <ul>
@@ -137,34 +121,67 @@ export default function Home() {
         </div>
         <div className="rightPanel">
           <section>
-            <h2>Compétences</h2>
-            <p>Git (6 ans)</p>
-            <p>HTML / CSS / JS (9 ans)</p>
-            <p>C / C++ (7 ans)</p>
-            <p>WebGL 2.0 (BabylonJS) (9 ans)</p>
-            <p>React & Typescript (4 ans)</p>
-            <p>Webpack (3 ans)</p>
-            <p>WebAssembly (2 ans)</p>
-            <p>Rust (2 ans)</p>
-            <p>D3 (1 an)</p>
-            <p>Java / Java Swing (1 an)</p>
-            <p>Django (1 an)</p>
-            <p>OpenVDB (1 an)</p>
-            <p>Python 3 (Numpy / Seaborn / Keras / Pandas) (3 ans)</p>
-            <p>Unity (C#) (1 an)</p>
-            <p>Electron (1 an)</p>
-            <p>SQL (2 ans)</p>
-            <p>OCAML (1 an)</p>
+            <h2><span className="icon contact-icon"></span>Contact</h2>
+            <div>
+              <p>Palaiseau, France</p>
+              <p>+33 6 37 29 67 37</p>
+              <p><a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a></p>
+            </div>
           </section>
           <section>
-            <h2>Langues</h2>
+            <h2><span className="icon skill-icon"></span>Compétences</h2>
+
+            <div>
+              <h3>Général</h3>
+              <p>Soft Skills</p>
+              <p>Git <span className="yearsOfExperience">(6 ans)</span></p>
+            </div>
+            <div>
+              <h3>Dev Web</h3>
+              <p>HTML / CSS / JS (9 ans)</p>
+              <p>React & Typescript (4 ans)</p>
+              <p>Webpack (3 ans)</p>
+              <p>WebAssembly (2 ans)</p>
+              <p>Django (1 an)</p>
+            </div>
+            <div>
+              <h3>Graphismes</h3>
+              <p>WebGL (BabylonJS) (9 ans)</p>
+              <p>D3.JS (1 an)</p>
+              <p>Blender (1 an)</p>
+              <p>Seaborn (1 an)</p>
+              <p>OpenVDB C++ (1 an)</p>
+            </div>
+            <div hidden>
+              <h3>Machine Learning</h3>
+              <p>Numpy / Sklearn / Keras / Pandas (3 ans)</p>
+            </div>
+            <div hidden>
+              <h3>Desktop</h3>
+              <p>C / C++ (7 ans)</p>
+              <p>Rust (2 ans)</p>
+              <p>Java / Java Swing (1 an)</p>
+              <p>Electron (1 an)</p>
+            </div>
+            <div hidden>
+              <h3>Mobile</h3>
+              <p>Android Kotlin (1 an)</p>
+            </div>
+            <div hidden>
+              <h3>Autres</h3>
+              <p>SQL (2 ans)</p>
+              <p>OCAML (1 an)</p>
+            </div>
+          </section>
+          <section>
+            <h2><span className="icon language-icon"></span>Langues</h2>
             <p>Français (Natif)</p>
             <p>Anglais (C1)</p>
             <p>Japonais (B1)</p>
-            <p>Espagnol (A2)</p>
+            <p hidden>Espagnol (A2)</p>
           </section>
           <section>
-            <h2>Centres d&apos;intérêt</h2>
+            <h2><span className="icon hobby-icon"></span>Loisirs</h2>
             <p>Piano (5 ans)</p>
             <p>Flûte à bec (10 ans)</p>
             <p>Jeux vidéos</p>

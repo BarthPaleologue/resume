@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$default-font: 'Roboto', sans-serif;
+
 $border-radius: 5px;
 $spacing: 5px;
-$section-background: #e2dada;
+$header-background: midnightblue;
+$accent-color: #ffcc00;
+$gradient-background: linear-gradient(90deg, $header-background, darken($header-background, 10));
+$section-background: #dbdeff;
