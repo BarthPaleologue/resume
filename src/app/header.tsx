@@ -11,7 +11,7 @@ export const Header = () => {
         </div>
         <div className="namePanel">
           <h1>Barthélemy Paléologue</h1>
-          <p>L'important c'est de passer un bon moment</p>
+          <p>L&apos;important c&apos;est de passer un bon moment</p>
         </div>
       </header>
     )

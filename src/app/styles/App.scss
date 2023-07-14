@@ -46,7 +46,7 @@ body {
   .panelContainer {
     display: flex;
     flex-direction: row-reverse;
-    column-gap: $spacing;
+    column-gap: 10px;
     padding: 0 $spacing;
 
     .leftPanel,
