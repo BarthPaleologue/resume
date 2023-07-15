@@ -45,9 +45,9 @@ export const experiences: Experience[] = [
         enabled: false
     },
     {
-        title: "Stage dans un laboratoire de recherche",
+        title: "Stage au LS2N (Laboratoire de recherche)",
         url: "https://www.ls2n.fr/",
-        when: "Août 2022 au LS2N à Nantes",
+        when: "Août 2022 à Nantes",
         what: [
             "<b>Coopération</b> en <b>méthode agile</b> avec un chercheur",
             "Conception d&apos;une visualisation interactive avec <b>Pygame</b>",
