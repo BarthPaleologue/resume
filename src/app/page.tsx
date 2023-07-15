@@ -1,4 +1,6 @@
 import { AccessLinkIcon } from './accessLinkIcon';
+import { Experience, ExperienceContainer } from './experienceContainer';
+import { experiences } from './experiences';
 import { FormationContainer } from './formationContainer';
 import { formations } from './formations';
 import { Header } from './header';
@@ -13,22 +15,14 @@ export default function Home() {
           <section className="formation">
             <h2><span className="icon formation-icon inverted"></span>Formation</h2>
             {formations.map((formation) => (
-              <FormationContainer
-                formation={formation} />
+              <FormationContainer formation={formation} />
             ))}
           </section>
           <section>
             <h2><span className="icon experience-icon inverted"></span>Expérience</h2>
-            <div>
-              <h3>Univers Procédural <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97" /></h3>
-              <h4>Juin 2021 - Aujourd'hui</h4>
-              <ul>
-                <li>Utilisation de <b>Rust</b> et <b>WASM</b> pour des performances maximales</li>
-                <li>Conception d'effets visuels en <b>GLSL</b> (atmosphère, nuages...)</li>
-                <li>Modélisation d&apos;objets sur <b>Blender</b></li>
-                <li>Organisation d&apos;un projet très vaste sur le schéma <b>MVC</b></li>
-              </ul>
-            </div>
+            {experiences.map((experience: Experience) => (
+              <ExperienceContainer experience={experience} />
+            ))}
             <div>
               <h3>Visualisation de la popularité des prénoms <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97" /></h3>
               <h4>Juin 2023 à Telecom Paris</h4>
