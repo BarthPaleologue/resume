@@ -135,8 +135,7 @@ section {
     column-gap: 10px;
     color: $accent-color;
     background: $gradient-background;
-    border-top-left-radius: $border-radius;
-    border-top-right-radius: $border-radius;
+    border-radius: $border-radius;
     padding: 5px 10px;
     text-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
   }
@@ -148,6 +147,9 @@ section {
 
     h3 {
       margin-block: 0;
+      background: $gradient-background;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     h4 {

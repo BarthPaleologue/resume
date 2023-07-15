@@ -12,12 +12,12 @@ export default function Home() {
             <div>
               <h3>Diplôme d&apos;Ingénieur - Télécom Paris</h3>
               <h4>Septembre 2021 à Juillet 2024</h4>
-              <p>Formation généraliste spécialisée en graphisme et science des données.</p>
+              <p>Formation généraliste spécialisée en <b>graphisme</b> et <b>science des données</b>.</p>
             </div>
             <div>
               <h3>Classe Prépa MPSI/MP - Lycée Clemenceau Nantes</h3>
               <h4>Septembre 2019 à Juin 2021</h4>
-              <p>Formation scientifique généraliste en maths, physique et informatique.</p>
+              <p>Formation scientifique généraliste en <b>Maths, Physique et Informatique</b>.</p>
             </div>
           </section>
           <section>
@@ -26,40 +26,62 @@ export default function Home() {
               <h3>Univers Procédural</h3>
               <h4>Depuis Juin 2021</h4>
               <ul>
-                <li>Création de programmes et utilitaires Rust de génération de terrain</li>
-                <li>Gestion sécurisée du multithreading</li>
-                <li>Utilisation de WebAssembly pour des performances maximales</li>
-                <li>Conception d&apos;un niveau de détail dynamique pour les planètes</li>
-                <li>Conception d&apos;un shader d&apos;atmosphère volumétrique</li>
-                <li>Modélisation d&apos;objets sur Blender</li>
-                <li>Organisation d&apos;un projet très vaste sur le schéma MVC</li>
+                <li>Utilisation de <b>Rust</b> et <b>WASM</b> pour des performances maximales</li>
+                <li>Conception d'effets visuels en <b>GLSL</b> (atmosphère, nuages...)</li>
+                <li>Modélisation d&apos;objets sur <b>Blender</b></li>
+                <li>Organisation d&apos;un projet très vaste sur le schéma <b>MVC</b></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Visualisation de la popularité des prénoms</h3>
+              <h4>Juin 2023 à Telecom Paris</h4>
+              <ul>
+                <li>Création d'une <b>carte de France interactive</b> avec <b>D3.JS</b></li>
+                <li><b>Optimisation</b> des données pour des <b>intéractions instantannées</b></li>
+                <li><b>Organisation du travail</b> d&apos;équipe avec <b>Git</b> et les <b>soft skills</b></li>
               </ul>
             </div>
             <div>
               <h3>Pipeline de simulation de fluide 3D</h3>
-              <h4>Avril 2023 à Juin 2024 à Telecom Paris</h4>
+              <h4>Avril 2023 à Juin 2023 à Telecom Paris</h4>
               <ul>
-                <li>Simulation du fluide 3D en C++ basé sur un papier de recherche</li>
-                <li>Utilisation de la librairie OpenVDB pour la transformation en volume</li>
-                <li>Utilisation de Blender pour le rendu final</li>
-                <li>Utilisation des soft skills pour assurer le travail en équipe</li>
+                <li>Simulation du fluide 3D en <b>C++</b> basé sur un <b>papier de recherche</b></li>
+                <li>Utilisation de la librairie <b>OpenVDB</b> pour la transformation en volume</li>
+                <li>Utilisation de <b>Blender Cycles</b> pour le rendu final</li>
+                <li>Utilisation des <b>soft skills</b> pour faciliter le travail en équipe</li>
+              </ul>
+            </div>
+            <div hidden>
+              <h3>Application de Todo List</h3>
+              <h4>[undefined] à Telecom Paris</h4>
+              <ul>
+                <li>Conception avec <b>Typescript</b> et <b>React</b></li>
+                <li>Organisation du travail d'équipe avec <b>Git</b> et les <b>soft skills</b></li>
+              </ul>
+            </div>
+            <div hidden>
+              <h3>Application Android</h3>
+              <h4>[undefined] à Telecom Paris</h4>
+              <ul>
+                <li>Utilisation de <b>Kotlin</b> avec <b>Android Studio</b></li>
+                <li>Conception d'une interface <b>accessible</b> et <b>intuitive</b></li>
               </ul>
             </div>
             <div>
               <h3>Stage dans un laboratoire de recherche (<a href="http://www.ls2n.fr/">LS2N</a>)</h3>
               <h4>Août 2022 à Nantes</h4>
               <ul>
-                <li>Coopération en méthode agile avec un chercheur</li>
-                <li>Conception d&apos;une visualisation interactive en Python</li>
-                <li>Création d&apos;une visualisation innovante pour les structure de treillis</li>
+                <li><b>Coopération</b> en <b>méthode agile</b> avec un chercheur</li>
+                <li>Conception d&apos;une visualisation interactive avec <b>Pygame</b></li>
+                <li>Création d&apos;une <b>représentation innovante</b> pour les structure de treillis</li>
               </ul>
             </div>
             <div>
-              <h3>Application graphique de résolution de labyrinthe JAVA</h3>
+              <h3>Application de résolution de labyrinthe JAVA</h3>
               <h4>Décembre 2021 à Février 2022 à Telecom Paris</h4>
               <ul>
-                <li>GUI intuitive et polyvalente avec Swing</li>
-                <li>Génération de labyrinthe basée sur l&apos;algorithme de Prim</li>
+                <li>GUI intuitive et polyvalente avec <b>Swing</b></li>
+                <li>Génération de labyrinthe basée sur <b>l&apos;algorithme de Prim</b></li>
               </ul>
             </div>
             <div hidden>
@@ -72,12 +94,11 @@ export default function Home() {
                 <li>Génération dynamique de PDF</li>
               </ul>
             </div>
-            <div>
-              <h3>Simulation d&apos;ondes sphériques en GLSL sur le web</h3>
+            <div hidden>
+              <h3>Simulation d'interférences ondulatoires</h3>
               <h4>Juillet 2021</h4>
               <ul>
-                <li>Création d&apos;un fragment shader en GLSL</li>
-                <li>Interface graphique pour communiquer avec le shader</li>
+                <li>Parallélisation grâce à un shader <b>GLSL</b></li>
               </ul>
             </div>
             <div hidden>
@@ -132,21 +153,21 @@ export default function Home() {
             <h2><span className="icon skill-icon"></span>Compétences</h2>
 
             <div>
-              <h3>Général</h3>
+              <h3>Travail d&apos;équipe</h3>
               <p>Soft Skills</p>
               <p>Git <span className="yearsOfExperience">(6 ans)</span></p>
             </div>
             <div>
               <h3>Dev Web</h3>
-              <p>HTML / CSS / JS (9 ans)</p>
-              <p>React & Typescript (4 ans)</p>
+              <p>HTML, CSS, JS (9 ans)</p>
+              <p>React, Typescript (4 ans)</p>
               <p>Webpack (3 ans)</p>
-              <p>WebAssembly (2 ans)</p>
-              <p>Django (1 an)</p>
+              <p>Rust, WebAssembly (2 ans)</p>
+              <p>Django, NextJS (1 an)</p>
             </div>
             <div>
               <h3>Graphismes</h3>
-              <p>WebGL (BabylonJS) (9 ans)</p>
+              <p>WebGL BabylonJS (9 ans)</p>
               <p>D3.JS (1 an)</p>
               <p>Blender (1 an)</p>
               <p>Seaborn (1 an)</p>
@@ -169,6 +190,8 @@ export default function Home() {
             </div>
             <div hidden>
               <h3>Autres</h3>
+              <p>Accessibilité (3 ans)</p>
+              <p>Enjeux RSE (2 ans)</p>
               <p>SQL (2 ans)</p>
               <p>OCAML (1 an)</p>
             </div>
