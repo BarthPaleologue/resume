@@ -1,3 +1,4 @@
+import { AccessLinkIcon } from './accessLinkIcon';
 import { Header } from './header';
 import './styles/App.scss';
 
@@ -7,8 +8,8 @@ export default function Home() {
       <Header />
       <div className="panelContainer">
         <div className="leftPanel">
-          <section>
-            <h2><span className="icon formation-icon"></span>Formation</h2>
+          <section className="formation">
+            <h2><span className="icon formation-icon inverted"></span>Formation</h2>
             <div>
               <h3>Diplôme d&apos;Ingénieur - Télécom Paris</h3>
               <h4>Septembre 2021 à Juillet 2024</h4>
@@ -21,10 +22,10 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h2><span className="icon experience-icon"></span>Expérience</h2>
+            <h2><span className="icon experience-icon inverted"></span>Expérience</h2>
             <div>
-              <h3>Univers Procédural</h3>
-              <h4>Depuis Juin 2021</h4>
+              <h3>Univers Procédural <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97"/></h3>
+              <h4>Juin 2021 - Aujourd'hui</h4>
               <ul>
                 <li>Utilisation de <b>Rust</b> et <b>WASM</b> pour des performances maximales</li>
                 <li>Conception d'effets visuels en <b>GLSL</b> (atmosphère, nuages...)</li>
@@ -33,7 +34,7 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3>Visualisation de la popularité des prénoms</h3>
+              <h3>Visualisation de la popularité des prénoms <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97"/></h3>
               <h4>Juin 2023 à Telecom Paris</h4>
               <ul>
                 <li>Création d'une <b>carte de France interactive</b> avec <b>D3.JS</b></li>
@@ -42,17 +43,17 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3>Pipeline de simulation de fluide 3D</h3>
-              <h4>Avril 2023 à Juin 2023 à Telecom Paris</h4>
+              <h3>Pipeline de simulation de fluide 3D <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97"/></h3>
+              <h4>Avril 2023 - Juin 2023 à Telecom Paris</h4>
               <ul>
                 <li>Simulation du fluide 3D en <b>C++</b> basé sur un <b>papier de recherche</b></li>
                 <li>Utilisation de la librairie <b>OpenVDB</b> pour la transformation en volume</li>
                 <li>Utilisation de <b>Blender Cycles</b> pour le rendu final</li>
-                <li>Utilisation des <b>soft skills</b> pour faciliter le travail en équipe</li>
+                <li>Utilisation des <b>soft skills</b> pour faciliter le <b>travail en équipe</b></li>
               </ul>
             </div>
             <div hidden>
-              <h3>Application de Todo List</h3>
+              <h3>Application de Todo List <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97"/></h3>
               <h4>[undefined] à Telecom Paris</h4>
               <ul>
                 <li>Conception avec <b>Typescript</b> et <b>React</b></li>
@@ -68,8 +69,8 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3>Stage dans un laboratoire de recherche (<a href="http://www.ls2n.fr/">LS2N</a>)</h3>
-              <h4>Août 2022 à Nantes</h4>
+              <h3>Stage dans un laboratoire de recherche <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
+              <h4>Août 2022 au LS2N à Nantes</h4>
               <ul>
                 <li><b>Coopération</b> en <b>méthode agile</b> avec un chercheur</li>
                 <li>Conception d&apos;une visualisation interactive avec <b>Pygame</b></li>
@@ -77,16 +78,16 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h3>Application de résolution de labyrinthe JAVA</h3>
-              <h4>Décembre 2021 à Février 2022 à Telecom Paris</h4>
+              <h3>Application de résolution de labyrinthe JAVA <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
+              <h4>Décembre 2021 - Février 2022 à Telecom Paris</h4>
               <ul>
                 <li>GUI intuitive et polyvalente avec <b>Swing</b></li>
                 <li>Génération de labyrinthe basée sur <b>l&apos;algorithme de Prim</b></li>
               </ul>
             </div>
             <div hidden>
-              <h3>Sites Web pour le forum de Télécom Paris</h3>
-              <h4>Septembre 2021 à Février 2023 à Telecom Paris</h4>
+              <h3>Sites Web pour le forum de Télécom Paris <AccessLinkIcon url="https://forum.telecom-paris.fr/"/></h3>
+              <h4>Septembre 2021 - Février 2023 à Telecom Paris</h4>
               <ul>
                 <li>Maintenance d&apos;un Frontend responsive moderne</li>
                 <li hidden>Création d&apos;un Backend Java Tomcat</li>
@@ -95,14 +96,14 @@ export default function Home() {
               </ul>
             </div>
             <div hidden>
-              <h3>Simulation d'interférences ondulatoires</h3>
+              <h3>Simulation d'interférences ondulatoires <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
               <h4>Juillet 2021</h4>
               <ul>
                 <li>Parallélisation grâce à un shader <b>GLSL</b></li>
               </ul>
             </div>
             <div hidden>
-              <h3>Interface de rangement de films pour Windows</h3>
+              <h3>Interface de rangement de films pour Windows <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
               <h4>Février 2021</h4>
               <ul>
                 <li>Développement avec Electron et NodeJS</li>
@@ -111,8 +112,8 @@ export default function Home() {
               </ul>
             </div>
             <div hidden>
-              <h3>Détection des fausses informations par IA</h3>
-              <h4>Septembre 2020 à Juin 2021 au Lycée Clemenceau (Nantes)</h4>
+              <h3>Détection des fausses informations par IA <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
+              <h4>Septembre 2020 - Juin 2021 au Lycée Clemenceau (Nantes)</h4>
               <ul>
                 <li>Utilisation de Pandas, Numpy pour traiter les données</li>
                 <li>Conception d&apos;un réseau de neurones convolutif avec Keras</li>
@@ -120,8 +121,8 @@ export default function Home() {
               </ul>
             </div>
             <div hidden>
-              <h3>Réseau de neurones GAN</h3>
-              <h4>Octobre 2019 à Juillet 2020</h4>
+              <h3>Réseau de neurones GAN <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
+              <h4>Octobre 2019 - Juillet 2020</h4>
               <ul>
                 <li>Manipulation d&apos;images avec Pillow</li>
                 <li>Processing des données avec numpy</li>
@@ -130,7 +131,7 @@ export default function Home() {
               </ul>
             </div>
             <div hidden>
-              <h3>Réseau de neurones convolutifs pour MNIST</h3>
+              <h3>Réseau de neurones convolutifs pour MNIST <AccessLinkIcon url="https://www.ls2n.fr/"/></h3>
               <h4>Janvier 2019</h4>
               <ul>
                 <li>Utilisation de TensorflowJS</li>
@@ -142,20 +143,20 @@ export default function Home() {
         </div>
         <div className="rightPanel">
           <section>
-            <h2><span className="icon contact-icon"></span>Contact</h2>
+            <h2><span className="icon contact-icon inverted"></span>Contact</h2>
             <div>
-              <p>Palaiseau, France</p>
-              <p>+33 6 37 29 67 37</p>
-              <p><a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a></p>
+              <p><span className="icon location-icon"></span>Palaiseau, France</p>
+              <p><span className="icon phone-icon"></span>+33 6 37 29 67 37</p>
+              <p><span className="icon email-icon"></span><a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a></p>
             </div>
           </section>
           <section>
-            <h2><span className="icon skill-icon"></span>Compétences</h2>
+            <h2><span className="icon skill-icon inverted"></span>Compétences</h2>
 
             <div>
               <h3>Travail d&apos;équipe</h3>
+              <p>Git <span className="yearsOfExperience">(6 ans)</span></p> 
               <p>Soft Skills</p>
-              <p>Git <span className="yearsOfExperience">(6 ans)</span></p>
             </div>
             <div>
               <h3>Dev Web</h3>
@@ -188,27 +189,30 @@ export default function Home() {
               <h3>Mobile</h3>
               <p>Android Kotlin (1 an)</p>
             </div>
-            <div hidden>
+            <div>
               <h3>Autres</h3>
               <p>Accessibilité (3 ans)</p>
               <p>Enjeux RSE (2 ans)</p>
-              <p>SQL (2 ans)</p>
-              <p>OCAML (1 an)</p>
+              <p hidden>SQL (2 ans)</p>
+              <p hidden>OCAML (1 an)</p>
             </div>
           </section>
           <section>
-            <h2><span className="icon language-icon"></span>Langues</h2>
-            <p>Français (Natif)</p>
-            <p>Anglais (C1)</p>
-            <p>Japonais (B1)</p>
-            <p hidden>Espagnol (A2)</p>
+            <h2><span className="icon language-icon inverted"></span>Langues</h2>
+            <div>
+              <p>Français (Natif)</p>
+              <p>Anglais (C1)</p>
+              <p>Japonais (B1)</p>
+              <p hidden>Espagnol (A2)</p>
+            </div>
           </section>
           <section>
-            <h2><span className="icon hobby-icon"></span>Loisirs</h2>
-            <p>Piano (5 ans)</p>
-            <p>Flûte à bec (10 ans)</p>
-            <p>Jeux vidéos</p>
-            <p>Course à pied</p>
+            <h2><span className="icon hobby-icon inverted"></span>Loisirs</h2>
+            <div>
+              <p>Piano (5 ans)</p>
+              <p>Flûte à bec (10 ans)</p>
+              <p>Course à pied</p>
+            </div>
           </section>
         </div>
       </div>

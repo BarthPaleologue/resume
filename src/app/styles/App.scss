@@ -11,12 +11,11 @@ html {
 body {
   max-width: 21cm;
   //height: max-content;
-  //height: 29.7cm;
-  margin: 10px auto;
+  height: 29.68cm;
+  margin: 0 auto;
   //padding: 15px;
   background: white;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-  padding-bottom: $spacing;
 }
 
 body h2 {
@@ -47,13 +46,13 @@ body {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 10px;
-    padding: 0 $spacing;
+    padding: 0 $spacing 10px $spacing;
 
     .leftPanel,
     .rightPanel {
       display: flex;
       flex-direction: column;
-      row-gap: $spacing;
+      row-gap: 10px;
     }
 
     .leftPanel {
@@ -67,7 +66,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   body header {
     height: 120px;
   }
@@ -113,15 +112,16 @@ section {
   flex-direction: column;
   row-gap: 10px;
   flex-grow: 1;
+  &.formation {
+    flex-grow: 0.3;
+  }
 
   //background: $section-background;
   justify-content: space-around;
   border-radius: $border-radius;
 
-  padding-bottom: 10px;
-
   &>*:not(h2) {
-    padding: 0 10px;
+    padding: 0 5px;
   }
 
   h2,
@@ -147,32 +147,45 @@ section {
 
     h3 {
       margin-block: 0;
-      background: $gradient-background;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: $header-background;
+      display: flex;
+      column-gap: 5px;
+
+      a {
+        height: 50%;
+      }
     }
 
     h4 {
+      font-size: 0.9em;
       margin-block-end: 0.5em;
     }
 
     ul {
       margin-block: 0;
       padding-inline-start: 20px;
-      list-style-type: circle;
+      list-style-type: disclosure-closed;
     }
   }
 }
 
+p > .icon {
+  margin-right: 5px;
+}
+
 .icon {
+  display: inline-block;
   height: 100%;
   aspect-ratio: 1;
+  vertical-align: middle;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 
-  // make it glow
-  filter: invert(1) drop-shadow(0 0 1px rgba(255, 255, 255, 0.5));
+  &.inverted {
+    // make it glow
+    filter: invert(1) drop-shadow(0 0 1px rgba(255, 255, 255, 0.5));
+  }
 
   &.formation-icon {
     background-image: url(/static/college.png);
@@ -196,5 +209,21 @@ section {
 
   &.hobby-icon {
     background-image: url(/static/telescope.png);
+  }
+
+  &.location-icon {
+    background-image: url(/static/location.png);
+  }
+
+  &.phone-icon {
+    background-image: url(/static/phone.png);
+  }
+
+  &.email-icon {
+    background-image: url(/static/email.png);
+  }
+
+  &.access-icon {
+    background-image: url(/static/access.png);
   }
 }
