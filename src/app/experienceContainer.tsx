@@ -25,7 +25,7 @@ export const ExperienceContainer = ({ experience }: ExperienceContainerProps) =>
             <h4>{experience.when}</h4>
             <ul>
                 {experience.what.map((what: string) => (
-                    <li dangerouslySetInnerHTML={createMarkup(what)}></li>
+                    <li key={what} dangerouslySetInnerHTML={createMarkup(what)}></li>
                 ))}
             </ul>
         </div>

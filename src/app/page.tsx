@@ -13,11 +13,11 @@ export default function Home() {
         <div className="leftPanel">
           <section className="formation">
             <h2><span className="icon formation-icon inverted"></span>Formation</h2>
-            {formations.map((formation) => (<FormationContainer formation={formation} />))}
+            {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
           </section>
           <section>
             <h2><span className="icon experience-icon inverted"></span>Expérience</h2>
-            {experiences.map((experience: Experience) => (<ExperienceContainer experience={experience} />))}
+            {experiences.map((experience: Experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
         <div className="rightPanel">
