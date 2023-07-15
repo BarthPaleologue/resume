@@ -13,15 +13,11 @@ export default function Home() {
         <div className="leftPanel">
           <section className="formation">
             <h2><span className="icon formation-icon inverted"></span>Formation</h2>
-            {formations.map((formation) => (
-              <FormationContainer formation={formation} />
-            ))}
+            {formations.map((formation) => (<FormationContainer formation={formation} />))}
           </section>
           <section>
             <h2><span className="icon experience-icon inverted"></span>Expérience</h2>
-            {experiences.map((experience: Experience) => (
-              <ExperienceContainer experience={experience} />
-            ))}
+            {experiences.map((experience: Experience) => (<ExperienceContainer experience={experience} />))}
           </section>
         </div>
         <div className="rightPanel">
@@ -35,7 +31,6 @@ export default function Home() {
           </section>
           <section>
             <h2><span className="icon skill-icon inverted"></span>Compétences</h2>
-
             <div>
               <h3>Travail d&apos;équipe</h3>
               <p>Git <span className="yearsOfExperience">(6 ans)</span></p>
@@ -46,7 +41,7 @@ export default function Home() {
               <p>WebGL BabylonJS (8 ans)</p>
               <p>D3.JS, Altair, Tableau (&lt;1 an)</p>
               <p>Blender (1 an)</p>
-              <p>Seaborn (1 an)</p>
+              <p hidden>Seaborn (1 an)</p>
               <p>OpenVDB C++ (&lt;1 an)</p>
             </div>
             <div>
@@ -76,6 +71,7 @@ export default function Home() {
               <h3>Autres</h3>
               <p>Accessibilité (3 ans)</p>
               <p>Enjeux RSE (2 ans)</p>
+              <p>Java (2 ans), Kotlin (&lt;1an)</p>
               <p hidden>SQL (2 ans)</p>
               <p hidden>OCAML (1 an)</p>
             </div>
