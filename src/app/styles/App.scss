@@ -11,7 +11,7 @@ html {
 body {
   max-width: 21cm;
   //height: max-content;
-  height: 29.68cm;
+  min-height: 29.68cm;
   margin: 0 auto;
   //padding: 15px;
   background: white;
@@ -56,7 +56,8 @@ body {
     }
 
     .leftPanel {
-      flex: 2.5
+      flex: 2.5;
+      margin-top: 4px;
     }
 
     .rightPanel {
@@ -88,22 +89,38 @@ body {
   }
 }
 
-@media screen and (max-width: 580px) {
-  body header {
-    height: 100px;
+@media screen and (max-width: 800px) {
+  body header .namePanel h1 {
+    font-size: 200%;
   }
+}
 
-  body header h1 {
-    font-size: 150%;
-  }
-
+@media screen and (max-width: 775px) {
   body header .picturePanel {
-    height: 70%;
+    height: 100%;
+  }
+  section h2 {
+    font-size: 100%;
   }
 
-  body header .infoPanel {
-    font-size: 70% !important;
-    min-width: 150px !important;
+  .rightPanel, .leftPanel {
+    margin-top: 5px !important;
+
+    .contact {
+      flex-grow: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .panelContainer {
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .namePanel p {
+    font-size: 75%;
   }
 }
 
@@ -152,7 +169,7 @@ section {
       column-gap: 5px;
 
       a {
-        height: 50%;
+        height: 12px;
       }
     }
 
@@ -162,6 +179,9 @@ section {
     }
 
     ul {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
       margin-block: 0;
       padding-inline-start: 20px;
       list-style-type: disclosure-closed;
@@ -170,7 +190,7 @@ section {
 }
 
 p > .icon {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .icon {

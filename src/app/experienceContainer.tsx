@@ -20,7 +20,7 @@ export const ExperienceContainer = ({ experience }: ExperienceContainerProps) =>
         }
     }
     return (
-        <div hidden={!experience.enabled}>
+        <div className="experienceContainer" hidden={!experience.enabled}>
             <h3>{experience.title} <AccessLinkIcon url="https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97" /></h3>
             <h4>{experience.when}</h4>
             <ul>
