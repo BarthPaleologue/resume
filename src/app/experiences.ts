@@ -3,7 +3,7 @@ import { Experience } from "./experienceContainer";
 export const experiences: Experience[] = [
     {
         title: "Visualisation de la popularité des prénoms",
-        url: "https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97",
+        url: "https://github.com/BarthPaleologue/BirthNameViz",
         when: "Juin 2023 à Telecom Paris",
         what: [
             "Création d'une <b>carte de France interactive</b> avec <b>D3.JS</b>",
@@ -13,8 +13,8 @@ export const experiences: Experience[] = [
         enabled: true
     },
     {
-        title: "Pipeline de simulation de fluide 3D",
-        url: "https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97",
+        title: "Pipeline de simulation et rendu de fluide 3D",
+        url: "https://github.com/Konodinger/Liquid3D",
         when: "Avril 2023 - Juin 2023 à Telecom Paris",
         what: [
             "Simulation du fluide 3D en <b>C++</b> basé sur un <b>papier de recherche</b>",
@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
     {
         title: "Application de Todo List",
         url: "https://barth.paleologue.fr/todo",
-        when: "[UNDEFINED] à Telecom Paris",
+        when: "Mars 2023 - Avril 2023 à Telecom Paris",
         what: [
             "Conception avec <b>Typescript</b> et <b>React</b>",
             "Organisation du travail d'équipe avec <b>Git</b> et les <b>soft skills</b>"
@@ -35,9 +35,18 @@ export const experiences: Experience[] = [
         enabled: false
     },
     {
+        title: "Application de dessin 2D",
+        url: "https://github.com/BarthPaleologue/Paint4D",
+        when: "Octobre 2022 - Novembre 2022 à Telecom Paris",
+        what: [
+            "Conception avec Qt et C++ d'une interface intuitive",
+        ],
+        enabled: false
+    },
+    {
         title: "Application Android",
-        url: "https://barth.paleologue.fr/todo",
-        when: "[UNDEFINED] à Telecom Paris",
+        url: "https://github.com/BarthPaleologue/Stonks",
+        when: "Septembre 2022 à Telecom Paris",
         what: [
             "Utilisation de <b>Kotlin</b> avec <b>Android Studio</b>",
             "Conception d'une interface <b>accessible</b> et <b>intuitive</b>"
@@ -69,8 +78,8 @@ export const experiences: Experience[] = [
     },
     {
         title: "Application de résolution de labyrinthe JAVA",
-        url: "https://www.ls2n.fr/",
-        when: "Décembre 2021 - Février 2022 à Telecom Paris",
+        url: "https://github.com/BarthPaleologue/maze-solver-generator",
+        when: "Octobre 2021 - Mars 2022 à Telecom Paris",
         what: [
             "GUI intuitive et polyvalente avec <b>Swing</b>",
             "Génération de labyrinthe basée sur <b>l&apos;algorithme de Prim</b>"
@@ -100,17 +109,17 @@ export const experiences: Experience[] = [
     },
     {
         title: "Interface de rangement de films pour Windows",
-        url: "https://www.ls2n.fr/",
+        url: "https://github.com/BarthPaleologue/moviecenter",
         when: "Février 2021",
         what: [
-            "Développement avec Electron et NodeJS",
+            "Développement avec Electron",
             "Récupération des affiches par Web Scraping",
         ],
         enabled: false
     },
     {
         title: "Détection des fausses informations par IA",
-        url: "https://www.ls2n.fr/",
+        url: "https://github.com/BarthPaleologue/FAKENEWS",
         when: "Septembre 2020 - Juin 2021 au Lycée Clemenceau (Nantes)",
         what: [
             "Utilisation de Pandas, Numpy pour traiter les données",
@@ -121,7 +130,7 @@ export const experiences: Experience[] = [
     },
     {
         title: "Génération d'image avec réseau de neurones GAN",
-        url: "https://www.ls2n.fr/",
+        url: "https://github.com/BarthPaleologue/EdelGAN",
         when: "Octobre 2019 - Juillet 2020",
         what: [
             "Manipulation d&apos;images avec Pillow",
@@ -133,7 +142,7 @@ export const experiences: Experience[] = [
     },
     {
         title: "Réseau de neurones convolutifs pour MNIST",
-        url: "https://www.ls2n.fr/",
+        url: "https://github.com/BarthPaleologue/MNIST",
         when: "Janvier 2019",
         what: [
             "Conception d'un réseau avec Keras",

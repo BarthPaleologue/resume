@@ -17,7 +17,7 @@ export default function Home() {
             {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
           </section>
           <section>
-            <h2><span className="icon experience-icon inverted"></span>Expérience <AccessLinkIcon inverted url='https://barth.paleologue.fr' /></h2>
+            <h2><span className="icon experience-icon inverted"></span>Expérience <AccessLinkIcon inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
             {experiences.map((experience: Experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
@@ -50,9 +50,9 @@ export default function Home() {
             <div>
               <h3>Programmation</h3>
               <p>HTML, CSS, JS (9 ans)</p>
+              <p>C, C++, Qt (5 ans)</p>
               <p>React, Typescript (4 ans)</p>
               <p>Webpack (3 ans)</p>
-              <p>C++ (5 ans)</p>
               <p>Rust, WebAssembly (2 ans)</p>
               <p>Java, Kotlin (2 ans)</p>
               <p hidden>Django, NextJS (1 an)</p>

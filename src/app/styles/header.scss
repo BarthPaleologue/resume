@@ -27,9 +27,9 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        row-gap: 10px;
         h1 {
-            font-family: $default-font;
+            font-family: 'Kanit', sans-serif;
+            font-weight: 300;
             text-align: center;
             color: white;
             font-size: 300%;
@@ -40,6 +40,7 @@ header {
             color: white;
             margin-block: 0;
             text-align: center;
+            padding-bottom: 14px;
         }
     }
 }
