@@ -51,7 +51,7 @@ export const experiences: Experience[] = [
         what: [
             "<b>Coopération</b> en <b>méthode agile</b> avec un chercheur",
             "Conception d&apos;une visualisation interactive avec <b>Pygame</b>",
-            "Création d&apos;une <b>représentation innovante</b> pour les structure de treillis"
+            //"Création d&apos;une <b>représentation innovante</b> pour les structure de treillis"
         ],
         enabled: true
     },
@@ -62,8 +62,8 @@ export const experiences: Experience[] = [
         what: [
             "Utilisation de <b>Rust</b> et <b>WASM</b> pour des performances maximales",
             "Conception d'effets visuels en <b>GLSL</b> (atmosphère, nuages...)",
-            "Modélisation d&apos;objets sur <b>Blender</b>",
-            "Organisation d&apos;un projet très vaste sur le schéma <b>MVC</b>"
+            "Modélisation d'objets sur <b>Blender</b>",
+            //"Organisation d'un projet très vaste sur le schéma <b>MVC</b>"
         ],
         enabled: true
     },

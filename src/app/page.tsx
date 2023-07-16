@@ -1,3 +1,4 @@
+import { AccessLinkIcon } from './accessLinkIcon';
 import { Experience, ExperienceContainer } from './experienceContainer';
 import { experiences } from './experiences';
 import { FormationContainer } from './formationContainer';
@@ -16,7 +17,7 @@ export default function Home() {
             {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
           </section>
           <section>
-            <h2><span className="icon experience-icon inverted"></span>Expérience</h2>
+            <h2><span className="icon experience-icon inverted"></span>Expérience <AccessLinkIcon inverted url='https://barth.paleologue.fr' /></h2>
             {experiences.map((experience: Experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
@@ -26,31 +27,35 @@ export default function Home() {
             <div>
               <p><span className="icon location-icon"></span>Palaiseau, France</p>
               <p><span className="icon phone-icon"></span>+33 6 37 29 67 37</p>
+              <p><span className="icon portfolio-icon"></span><a href="https://barth.paleologue.fr" target="_blank">Online portfolio</a></p>
               <p><span className="icon email-icon"></span><a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a></p>
             </div>
           </section>
           <section>
             <h2><span className="icon skill-icon inverted"></span>Compétences</h2>
             <div>
-              <h3>Travail d&apos;équipe</h3>
-              <p>Git <span className="yearsOfExperience">(6 ans)</span></p>
+              <h3>Général</h3>
+              <p>Git (6 ans)</p>
               <p>Soft Skills</p>
+              <p>Accessibilité (3 ans)</p>
+              <p>Enjeux RSE (2 ans)</p>
             </div>
             <div>
               <h3>Graphismes</h3>
               <p>WebGL BabylonJS (8 ans)</p>
               <p>D3.JS, Altair, Tableau (&lt;1 an)</p>
               <p>Blender (1 an)</p>
-              <p hidden>Seaborn (1 an)</p>
               <p>OpenVDB C++ (&lt;1 an)</p>
             </div>
             <div>
-              <h3>Dev Web</h3>
+              <h3>Programmation</h3>
               <p>HTML, CSS, JS (9 ans)</p>
               <p>React, Typescript (4 ans)</p>
               <p>Webpack (3 ans)</p>
+              <p>C++ (5 ans)</p>
               <p>Rust, WebAssembly (2 ans)</p>
-              <p>Django, NextJS (1 an)</p>
+              <p>Java, Kotlin (2 ans)</p>
+              <p hidden>Django, NextJS (1 an)</p>
             </div>
             <div hidden>
               <h3>Machine Learning</h3>
@@ -66,14 +71,6 @@ export default function Home() {
             <div hidden>
               <h3>Mobile</h3>
               <p>Android Kotlin (1 an)</p>
-            </div>
-            <div>
-              <h3>Autres</h3>
-              <p>Accessibilité (3 ans)</p>
-              <p>Enjeux RSE (2 ans)</p>
-              <p>Java (2 ans), Kotlin (&lt;1an)</p>
-              <p hidden>SQL (2 ans)</p>
-              <p hidden>OCAML (1 an)</p>
             </div>
           </section>
           <section>
