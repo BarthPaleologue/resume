@@ -17,7 +17,7 @@ export default function Home() {
             {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
           </section>
           <section>
-            <h2><span className="icon experience-icon inverted"></span>Expérience <AccessLinkIcon inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
+            <h2><span className="icon experience-icon inverted"></span><AccessLinkIcon text="Expérience" inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
             {experiences.map((experience: Experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
