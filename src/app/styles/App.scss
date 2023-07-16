@@ -90,6 +90,8 @@ body {
   body .rightPanel {
     width: 100%;
     float: none;
+    background: beige;
+    border-radius: $border-radius;
     padding-left: 0;
   }
 }
