@@ -14,16 +14,16 @@ export type SkillList = {
 
 export const skills: SkillList[] = [
     {
-        title: S({ "fr": "Général", "en": "General" }).s,
+        title: S({ fr: "Général", en: "General" }).s,
         skills: [
             { title: "Git", yoe: 6 },
             { title: "Soft skills" },
-            { title: S({ "fr": "Accessibilité", "en": "Accessibility" }).s, yoe: 3 },
-            { title: S({ "fr": "Enjeux RSE", "en": "CSR issues" }).s, yoe: 2 },
+            { title: S({ fr: "Accessibilité", en: "Accessibility" }).s, yoe: 3 },
+            { title: S({ fr: "Enjeux RSE", en: "CSR issues" }).s, yoe: 2 },
         ]
     },
     {
-        title: S({ "fr": "Graphismes", "en": "Graphics" }).s,
+        title: S({ fr: "Graphismes", en: "Graphics" }).s,
         skills: [
             { title: "WebGL BabylonJS", yoe: 8 },
             { title: "D3.JS, Altair, Tableau", yoe: 1 },
@@ -32,7 +32,7 @@ export const skills: SkillList[] = [
         ]
     },
     {
-        title: S({ "fr": "Programmation", "en": "Programming" }).s,
+        title: S({ fr: "Programmation", en: "Programming" }).s,
         skills: [
             { title: "HTML, CSS, JS", yoe: 9 },
             { title: "C, C++, Qt", yoe: 5 },

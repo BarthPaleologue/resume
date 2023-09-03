@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { currentLang } from './internationalization'
 
 export const metadata: Metadata = {
   title: 'Barthélemy Paléologue - Resume',
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang={currentLang}>
       <body>{children}</body>
     </html>
   )

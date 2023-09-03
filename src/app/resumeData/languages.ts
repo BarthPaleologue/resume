@@ -15,19 +15,19 @@ export type Language = {
 
 export const languages: Language[] = [
     {
-        title: S({ "fr": "Français", "en": "French" }).s,
-        level: S({ "fr": "Natif", "en": "Native" }).s
+        title: S({ fr: "Français", en: "French" }).s,
+        level: S({ fr: "Natif", en: "Native" }).s
     },
     {
-        title: S({ "fr": "Anglais", "en": "English" }).s,
+        title: S({ fr: "Anglais", en: "English" }).s,
         level: "C1"
     },
     {
-        title: S({ "fr": "Japonais", "en": "Japanese" }).s,
+        title: S({ fr: "Japonais", en: "Japanese" }).s,
         level: "B1"
     },
     {
-        title: S({ "fr": "Espagnol", "en": "Spanish" }).s,
+        title: S({ fr: "Espagnol", en: "Spanish" }).s,
         level: "A2",
         hidden: true
     }
