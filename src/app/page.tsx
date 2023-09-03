@@ -3,9 +3,10 @@ import { Experience, ExperienceContainer } from './experienceContainer';
 import { experiences } from './experiences';
 import { FormationContainer } from './formationContainer';
 import { formations } from './formations';
-import { Lang, YoE, currentLang } from './internationalization';
+import { Lang, S, YoE, currentLang } from './internationalization';
 import { Header } from './header';
 import './styles/App.scss';
+import { IS } from './strings';
 
 export default function Home() {
   return (
@@ -14,26 +15,26 @@ export default function Home() {
       <div className="panelContainer">
         <div className="leftPanel">
           <section className="formation">
-            <h2><span className="icon formation-icon inverted"></span>Formation</h2>
+            <h2><span className="icon formation-icon inverted"></span>{IS.formation}</h2>
             {formations.map((formation) => (<FormationContainer key={formation.titleFR} formation={formation} />))}
           </section>
           <section>
-            <h2><span className="icon experience-icon inverted"></span><AccessLinkIcon text={currentLang === Lang.FR ? "Expérience" : "Experience"} inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
+            <h2><span className="icon experience-icon inverted"></span><AccessLinkIcon text={IS.experience} inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
             {experiences.map((experience: Experience) => (<ExperienceContainer key={experience.titleFR} experience={experience} />))}
           </section>
         </div>
         <div className="rightPanel">
           <section className="contact">
-            <h2><span className="icon contact-icon inverted"></span>Contact</h2>
+            <h2><span className="icon contact-icon inverted"></span>{IS.contact}</h2>
             <div>
               <p><span className="icon location-icon"></span>Palaiseau, France</p>
               <p><span className="icon phone-icon"></span><a href="tel:+33637296737">+33 6 37 29 67 37</a></p>
-              <p><span className="icon portfolio-icon"></span><a href="https://barth.paleologue.fr" target="_blank">{currentLang === Lang.FR ? "Portfolio en ligne" : "Online portfolio"}</a></p>
+              <p><span className="icon portfolio-icon"></span><a href="https://barth.paleologue.fr" target="_blank">{IS.onlinePortfolio}</a></p>
               <p><span className="icon email-icon"></span><a href="mailto:barth@paleologue.fr">barth@paleologue.fr</a></p>
             </div>
           </section>
           <section>
-            <h2><span className="icon skill-icon inverted"></span>{currentLang === Lang.FR ? "Compétences" : "Skills"}</h2>
+            <h2><span className="icon skill-icon inverted"></span>{IS.skills}</h2>
             <div>
               <h3>Général</h3>
               <p>Git ({YoE(6)})</p>
@@ -76,7 +77,7 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h2><span className="icon language-icon inverted"></span>{currentLang === Lang.FR ? "Langues" : "Languages"}</h2>
+            <h2><span className="icon language-icon inverted"></span>{IS.languages}</h2>
             <div>
               <p>{currentLang === Lang.FR ? "Français (Natif)" : "French (Native)"}</p>
               <p>{currentLang === Lang.FR ? "Anglais" : "English"} (C1)</p>
@@ -85,11 +86,11 @@ export default function Home() {
             </div>
           </section>
           <section>
-            <h2><span className="icon hobby-icon inverted"></span>{currentLang === Lang.FR ? "Loisirs" : "Hobbies"}</h2>
+            <h2><span className="icon hobby-icon inverted"></span>{IS.hobbies}</h2>
             <div>
               <p>Piano ({YoE(5)})</p>
-              <p>{currentLang === Lang.FR ? "Flûte à bec" : "Recorder"} ({YoE(10)})</p>
-              <p>{currentLang === Lang.FR ? "Course à pied" : "Jogging"}</p>
+              <p>{S({ "fr": "Flûte à bec", "en": "Recorder" }).s} ({YoE(10)})</p>
+              <p>{S({ "fr": "Course à pied", "en": "Jogging" }).s}</p>
             </div>
           </section>
         </div>
