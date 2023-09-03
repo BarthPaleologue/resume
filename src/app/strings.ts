@@ -1,14 +1,14 @@
 import { S } from "./internationalization";
 
 export const IS = {
-    formation: S({ fr: "Formation", en: "Formation" }).s,
-    experience: S({ fr: "Expérience", en: "Experience" }).s,
+    formation: S({ fr: "Formation", en: "Formation" }),
+    experience: S({ fr: "Expérience", en: "Experience" }),
 
-    skills: S({ fr: "Compétences", en: "Skills" }).s,
-    languages: S({ fr: "Langues", en: "Languages" }).s,
-    hobbies: S({ fr: "Loisirs", en: "Hobbies" }).s,
+    skills: S({ fr: "Compétences", en: "Skills" }),
+    languages: S({ fr: "Langues", en: "Languages" }),
+    hobbies: S({ fr: "Loisirs", en: "Hobbies" }),
 
     // contact section
-    contact: S({ fr: "Contact", en: "Contact" }).s,
-    onlinePortfolio: S({ fr: "Portfolio en ligne", en: "Online portfolio" }).s,
+    contact: S({ fr: "Contact", en: "Contact" }),
+    onlinePortfolio: S({ fr: "Portfolio en ligne", en: "Online portfolio" }),
 }

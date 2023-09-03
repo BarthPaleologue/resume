@@ -14,32 +14,8 @@ export function YoE(y: number): string {
     }
 }
 
-/**
- * Can use any language for the title, when and what
- */
-export class IString {
-    map: Map<Lang, string>;
-    constructor(map: Map<Lang, string>) {
-        this.map = map;
-    }
-
-    get s(): string {
-        const result = this.map.get(currentLang);
-        if (result === undefined) return `[MISSING ${currentLang} TRANSLATION]`
-        return result;
-    }
-
-    get(lang: Lang): string {
-        const result = this.map.get(lang);
-        if (result === undefined) return `[MISSING ${lang} TRANSLATION]`
-        return result;
-    }
-}
-
-export function S(json: { [key in Lang]: string }): IString {
-    const map = new Map<Lang, string>();
-    for (const [key, value] of Object.entries(json)) {
-        map.set(key as Lang, value);
-    }
-    return new IString(map);
+export function S(iString: { [key in Lang]: string }): string {
+    const result = iString[currentLang];
+    if (result === undefined) return `[MISSING ${currentLang} TRANSLATION]`;
+    return result;
 }
