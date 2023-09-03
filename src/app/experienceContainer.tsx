@@ -1,11 +1,15 @@
 import React from "react";
 import { AccessLinkIcon } from "./accessLinkIcon";
+import { Lang, currentLang } from "./internationalization";
 
 export type Experience = {
-    title: string;
+    titleFR: string;
+    titleEN: string;
     url: string;
-    when: string;
-    what: string[];
+    whenFR: string;
+    whenEN: string;
+    whatFR: string[];
+    whatEN: string[];
     enabled: boolean;
 }
 
@@ -21,10 +25,10 @@ export const ExperienceContainer = ({ experience }: ExperienceContainerProps) =>
     }
     return (
         <div className="experienceContainer" hidden={!experience.enabled}>
-            <h3><AccessLinkIcon url={experience.url} text={experience.title} /></h3>
-            <h4>{experience.when}</h4>
+            <h3><AccessLinkIcon url={experience.url} text={currentLang === Lang.FR ? experience.titleFR : experience.titleEN} /></h3>
+            <h4>{currentLang === Lang.FR ? experience.whenFR : experience.whenEN}</h4>
             <ul>
-                {experience.what.map((what: string) => (
+                {(currentLang === Lang.FR ? experience.whatFR : experience.whatEN).map((what: string) => (
                     <li key={what} dangerouslySetInnerHTML={createMarkup(what)}></li>
                 ))}
             </ul>

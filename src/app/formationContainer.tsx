@@ -1,9 +1,13 @@
 import React from "react";
+import { Lang, currentLang } from "./internationalization";
 
 export type Formation = {
-    title: string;
-    when: string;
-    what: string;
+    titleFR: string;
+    titleEN: string;
+    whenFR: string;
+    whenEN: string;
+    whatFR: string;
+    whatEN: string;
 }
 
 export interface FormationContainerProps {
@@ -13,13 +17,13 @@ export interface FormationContainerProps {
 export const FormationContainer = ({ formation }: FormationContainerProps) => {
     function createMarkup() {
         return {
-            __html: formation.what
+            __html: currentLang === Lang.FR ? formation.whatFR : formation.whatEN
         }
     }
     return (
         <div className="formationContainer" >
-            <h3>{formation.title}</h3>
-            <h4>{formation.when}</h4>
+            <h3>{currentLang === Lang.FR ? formation.titleFR : formation.titleEN}</h3>
+            <h4>{currentLang === Lang.FR ? formation.whenFR : formation.whenEN}</h4>
             <p dangerouslySetInnerHTML={createMarkup()}></p>
         </div>
     );
