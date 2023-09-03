@@ -21,7 +21,7 @@ export default function Home() {
         <div className="leftPanel">
           <section className="formation">
             <h2><span className="icon formation-icon inverted"></span>{IS.formation}</h2>
-            {formations.map((formation) => (<FormationContainer key={formation.titleFR} formation={formation} />))}
+            {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
           </section>
           <section>
             <h2><span className="icon experience-icon inverted"></span><AccessLinkIcon text={IS.experience} inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>

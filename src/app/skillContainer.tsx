@@ -1,15 +1,5 @@
 import { YoE } from "./internationalization"
-
-export type Skill = {
-    title: string;
-    yoe?: number;
-}
-
-export type SkillList = {
-    title: string;
-    skills: Skill[];
-    hidden?: boolean;
-}
+import { SkillList, Skill } from "./resumeData/skills";
 
 export interface SkillContainerProps {
     skillList: SkillList;

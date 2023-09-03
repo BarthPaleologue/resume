@@ -1,5 +1,15 @@
 import { S } from "../internationalization";
-import { SkillList } from "../skillContainer";
+
+export type Skill = {
+    title: string;
+    yoe?: number;
+}
+
+export type SkillList = {
+    title: string;
+    skills: Skill[];
+    hidden?: boolean;
+}
 
 export const skills: SkillList[] = [
     {
