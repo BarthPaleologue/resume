@@ -3,7 +3,7 @@ export enum Lang {
     EN = 'en'
 }
 
-export let currentLang = Lang.EN;
+export let currentLang = Lang.FR;
 
 export function YoE(y: number): string {
     switch (currentLang) {
@@ -17,7 +17,7 @@ export function YoE(y: number): string {
 /**
  * Can use any language for the title, when and what
  */
-class InternationalizedString {
+export class IString {
     map: Map<Lang, string>;
     constructor(map: Map<Lang, string>) {
         this.map = map;
@@ -36,10 +36,10 @@ class InternationalizedString {
     }
 }
 
-export function S(json: { [key in Lang]: string }): InternationalizedString {
+export function S(json: { [key in Lang]: string }): IString {
     const map = new Map<Lang, string>();
     for (const [key, value] of Object.entries(json)) {
         map.set(key as Lang, value);
     }
-    return new InternationalizedString(map);
+    return new IString(map);
 }
