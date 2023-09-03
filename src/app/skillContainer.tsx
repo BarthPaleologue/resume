@@ -1,12 +1,12 @@
-import { IString, YoE } from "./internationalization"
+import { YoE } from "./internationalization"
 
 export type Skill = {
-    title: IString | string;
+    title: string;
     yoe?: number;
 }
 
 export type SkillList = {
-    title: IString | string;
+    title: string;
     skills: Skill[];
     hidden?: boolean;
 }
@@ -16,15 +16,11 @@ export interface SkillContainerProps {
 }
 
 export const SkillContainer = ({ skillList }: SkillContainerProps) => {
-    const title = skillList.title instanceof IString ? skillList.title.s : skillList.title;
     return (
-        <div>
-            <h3>{title}</h3>
+        <div hidden={skillList.hidden}>
+            <h3>{skillList.title}</h3>
             {skillList.skills.map((skill: Skill) => (
-                <p key={skill.title instanceof IString ? skill.title.s : skill.title}>
-                    {skill.title instanceof IString ? skill.title.s : skill.title}&nbsp;
-                    {skill.yoe ? `(${YoE(skill.yoe)})` : ''}
-                </p>
+                <p key={skill.title}>{skill.title} {skill.yoe ? `(${YoE(skill.yoe)})` : ''}</p>
             ))}
         </div>
     )

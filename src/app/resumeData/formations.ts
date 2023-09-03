@@ -1,4 +1,4 @@
-import { Formation } from "./formationContainer";
+import { Formation } from "../formationContainer";
 
 export const formations: Formation[] = [
     {

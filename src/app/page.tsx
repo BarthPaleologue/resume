@@ -1,14 +1,17 @@
 import { AccessLinkIcon } from './accessLinkIcon';
-import { Experience, ExperienceContainer } from './experienceContainer';
-import { experiences } from './experiences';
+import { ExperienceContainer } from './experienceContainer';
+import { experiences } from './resumeData/experiences';
 import { FormationContainer } from './formationContainer';
-import { formations } from './formations';
-import { IString, Lang, S, YoE, currentLang } from './internationalization';
+import { formations } from './resumeData/formations';
 import { Header } from './header';
 import './styles/App.scss';
 import { IS } from './strings';
-import { skills } from './skills';
+import { skills } from './resumeData/skills';
 import { SkillContainer } from './skillContainer';
+import { hobbies } from './resumeData/hobbies';
+import { HobbyContainer } from './hobbyContainer';
+import { languages } from './resumeData/languages';
+import { LanguageContainer } from './languageContainer';
 
 export default function Home() {
   return (
@@ -37,23 +40,18 @@ export default function Home() {
           </section>
           <section>
             <h2><span className="icon skill-icon inverted"></span>{IS.skills}</h2>
-            {skills.map((skillList) => (<SkillContainer key={skillList.title instanceof IString ? skillList.title.s : skillList.title} skillList={skillList} />))}
+            {skills.map((skillList) => (<SkillContainer key={skillList.title} skillList={skillList} />))}
           </section>
           <section>
             <h2><span className="icon language-icon inverted"></span>{IS.languages}</h2>
             <div>
-              <p>{currentLang === Lang.FR ? "Français (Natif)" : "French (Native)"}</p>
-              <p>{currentLang === Lang.FR ? "Anglais" : "English"} (C1)</p>
-              <p>{currentLang === Lang.FR ? "Japonais" : "Japanese"} (B1)</p>
-              <p hidden>{currentLang === Lang.FR ? "Espagnol" : "Spanish"} (A2)</p>
+              {languages.map((language) => (<LanguageContainer key={language.title} language={language} />))}
             </div>
           </section>
           <section>
             <h2><span className="icon hobby-icon inverted"></span>{IS.hobbies}</h2>
             <div>
-              <p>Piano ({YoE(5)})</p>
-              <p>{S({ "fr": "Flûte à bec", "en": "Recorder" }).s} ({YoE(10)})</p>
-              <p>{S({ "fr": "Course à pied", "en": "Jogging" }).s}</p>
+              {hobbies.map((hobby) => (<HobbyContainer key={hobby.title} hobby={hobby} />))}
             </div>
           </section>
         </div>
