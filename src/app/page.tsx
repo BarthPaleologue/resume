@@ -25,7 +25,7 @@ export default function Home() {
           </section>
           <section>
             <h2><span className="icon experience-icon inverted"></span><AccessLinkIcon text={IS.experience} inverted url='https://barth.paleologue.fr' title="Online Portfolio" /></h2>
-            {experiences.map((experience) => (<ExperienceContainer key={experience.titleFR} experience={experience} />))}
+            {experiences.map((experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
         <div className="rightPanel">

@@ -3,6 +3,7 @@ import { S } from "../internationalization";
 export type Skill = {
     title: string;
     yoe?: number;
+    hidden?: boolean;
 }
 
 export type SkillList = {
@@ -26,7 +27,7 @@ export const skills: SkillList[] = [
         skills: [
             { title: "WebGL BabylonJS", yoe: 8 },
             { title: "D3.JS, Altair, Tableau", yoe: 1 },
-            { title: "Blender", yoe: 1 },
+            { title: "Blender", yoe: 1, hidden: true },
             { title: "OpenVDB C++", yoe: 1 },
         ]
     },
@@ -39,7 +40,7 @@ export const skills: SkillList[] = [
             { title: "Webpack", yoe: 3 },
             { title: "Rust, WebAssembly", yoe: 2 },
             { title: "Java, Kotlin", yoe: 2 },
-            { title: "Django, NextJS", yoe: 1 },
+            { title: "Django, NextJS", yoe: 1, hidden: true },
         ]
     },
     {
