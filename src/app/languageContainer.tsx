@@ -6,6 +6,6 @@ interface LanguageContainerProps {
 
 export const LanguageContainer = ({ language }: LanguageContainerProps) => {
     return (
-        <p key={language.title}>{language.title} ({language.level})</p>
+        <p key={language.title}>{language.icon ? <span className={"icon " + language.icon} />: <span/>}{language.title} ({language.level})</p>
     )
 }

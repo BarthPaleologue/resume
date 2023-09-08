@@ -18,7 +18,7 @@ export default function Home() {
     <main className='App'>
       <Header />
       <div className="panelContainer">
-        <div className="leftPanel">
+        <div className="largePanel">
           <section className="formation">
             <h2><span className="icon formation-icon inverted"></span>{IS.formation}</h2>
             {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
@@ -28,7 +28,7 @@ export default function Home() {
             {experiences.map((experience) => (<ExperienceContainer key={experience.title} experience={experience} />))}
           </section>
         </div>
-        <div className="rightPanel">
+        <div className="smallPanel">
           <section className="contact">
             <h2><span className="icon contact-icon inverted"></span>{IS.contact}</h2>
             <div>
