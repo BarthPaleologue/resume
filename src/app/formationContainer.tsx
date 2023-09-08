@@ -1,7 +1,7 @@
 import React from "react";
-import { Lang, currentLang } from "./internationalization";
-import { Formation } from "./resumeData/formations";
+import { Formation, formations } from "./resumeData/formations";
 import { AccessLinkIcon } from "./accessLinkIcon";
+import { IS } from "./strings";
 
 export interface FormationContainerProps {
     formation: Formation;
@@ -20,4 +20,13 @@ export const FormationContainer = ({ formation }: FormationContainerProps) => {
             <p dangerouslySetInnerHTML={createMarkup()}></p>
         </div>
     );
+}
+
+export const Formations = ({ }) => {
+    return (
+        <section className="formation">
+            <h2><span className="icon formation-icon inverted"></span>{IS.formation}</h2>
+            {formations.map((formation) => (<FormationContainer key={formation.title} formation={formation} />))}
+        </section>
+    )
 }
