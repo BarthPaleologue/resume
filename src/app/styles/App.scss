@@ -58,7 +58,7 @@ body {
     .largePanel {
       flex: 2.5;
       margin-top: 4px;
-      min-width: 480px;
+      min-width: 420px;
 
       p {
         line-height: 1.5em;
@@ -99,8 +99,6 @@ body {
   .largePanel {
     margin-top: 5px !important;
 
-    min-width: 100% !important;
-
     .contact {
       flex-grow: 0;
     }
@@ -110,6 +108,11 @@ body {
 @media screen and (max-width: 550px) {
   .namePanel p {
     font-size: 75%;
+  }
+
+  .smallPanel,
+  .largePanel {
+    min-width: 100% !important;
   }
 }
 
