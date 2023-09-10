@@ -37,13 +37,21 @@ body {
     display: flex;
     flex-direction: row-reverse;
     column-gap: 10px;
-    padding: 0 $spacing 10px $spacing;
+    padding: 0 $spacing 0 $spacing;
+
+    &.withoutPicture {
+      .smallPanel,
+      .largePanel {
+        margin-top: 4px;
+      }
+    }
 
     .largePanel,
     .smallPanel {
       display: flex;
       flex-direction: column;
       row-gap: 10px;
+      padding-bottom: 10px;
     }
 
     .largePanel {
@@ -60,20 +68,12 @@ body {
       margin-top: 106px;
       background: darken(beige, 5);
       border-radius: $border-radius;
-      padding-bottom: 10px;
+      //padding-bottom: 10px;
     }
   }
 }
 
 @media screen and (max-width: 800px) {
-  body header {
-    height: 120px;
-  }
-
-  body header h1 {
-    font-size: 200%;
-  }
-
   body .largePanel {
     width: 100%;
     float: none;
@@ -87,17 +87,7 @@ body {
   }
 }
 
-@media screen and (max-width: 800px) {
-  body header .namePanel h1 {
-    font-size: 200%;
-  }
-}
-
 @media screen and (max-width: 775px) {
-  body header .picturePanel {
-    height: 100%;
-  }
-
   section h2 {
     font-size: 100%;
   }
@@ -134,7 +124,7 @@ section {
     flex-grow: 0.3;
   }
 
-  justify-content: space-around;
+  //justify-content: space-around;
   border-radius: $border-radius;
 
   &>*:not(h2) {

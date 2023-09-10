@@ -1,4 +1,5 @@
-import { S } from "../internationalization";
+import { Lang, S, currentLang } from "../internationalization";
+import { settings } from "./settings";
 
 export type Skill = {
     title: string;
@@ -48,7 +49,7 @@ export const skills: SkillList[] = [
         skills: [
             { title: "Numpy / Sklearn / Keras / Pandas", yoe: 3 },
         ],
-        hidden: true
+        hidden: settings.showPicture
     },
     {
         title: "Desktop",

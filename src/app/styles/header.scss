@@ -11,6 +11,12 @@ header {
     padding: 10px;
     box-sizing: border-box;
 
+    &.en {
+        img {
+            //display: none;
+        }
+    }
+
     .picturePanel {
         height: 210px;
         align-self: baseline;
@@ -27,6 +33,7 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
+
         h1 {
             font-family: 'Kanit', sans-serif;
             font-weight: 300;
@@ -41,6 +48,42 @@ header {
             margin-block: 0;
             text-align: center;
             padding-bottom: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        height: 120px;
+
+        .namePanel {
+            h1 {
+                font-size: 200%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 775px) {
+    header .picturePanel {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    header {
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        height: 80px;
+
+        .namePanel {
+            h1 {
+                font-size: 150%;
+            }
         }
     }
 }

@@ -64,7 +64,7 @@ export const experiences: Experience[] = [
     },
     {
         title: S({ fr: "Stage au LS2N (Laboratoire de recherche)", en: "Research Internship at LS2N" }),
-        url: "https://www.ls2n.fr/",
+        url: S({ fr: "https://www.ls2n.fr/", en: "https://www.ls2n.fr/?lang=en" }),
         when: S({ fr: "Août 2022 à Nantes", en: "August 2022 in Nantes" }),
         what: [
             S({ fr: "Coopération en <b>méthode agile</b> avec un chercheur", en: "<b>Agile method</b> <b>cooperation</b> with a researcher" }),

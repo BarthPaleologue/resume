@@ -7,12 +7,14 @@ import { Languages } from './languageContainer';
 import { ContactContainer } from './contactContainer';
 
 import './styles/App.scss';
+import { Lang, currentLang } from './internationalization';
+import { settings } from './resumeData/settings';
 
 export default function Home() {
   return (
     <main className='App'>
       <Header />
-      <div className="panelContainer">
+      <div className={"panelContainer " + (settings.showPicture ? "withPicture" : "withoutPicture")}>
         <div className="largePanel">
           <Formations />
           <Experiences />
