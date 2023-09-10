@@ -4,7 +4,12 @@ $default-font: 'Roboto', sans-serif;
 
 $border-radius: 5px;
 $spacing: 5px;
-$header-background: hsl(0, 50%, 50%);
+
+// red is for french
+//$header-background: hsl(0, 50%, 50%);
+// lavender is for english
+$header-background: hsl(233, 15%, 45%);
+
 $accent-color: white;
 $gradient-background: linear-gradient(90deg, $header-background, darken($header-background, 10));
 $section-background: #cacaca;
