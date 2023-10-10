@@ -10,6 +10,17 @@ export type Experience = {
 
 export const experiences: Experience[] = [
     {
+        title: S({ fr: "Simulation d'écosystème", en: "Ecosystem Simulation" }),
+        url: "https://github.com/BarthPaleologue/inf633-2023-2024",
+        when: S({ fr: "Septembre 2023 - Octobre 2023 à Telecom Paris", en: "September 2023 - October 2023 at Telecom Paris" }),
+        what: [
+            S({ fr: "Utilisation approfondie du <b>moteur 3D Unity</b>", en: "In-depth use of the <b>Unity 3D Engine</b>" }),
+            S({ fr: "Animation procédurale avec <b>Cinématique Inverse</b>", en: "Procedural animation with <b>Inverse Kinematics</b>" }),
+            S({ fr: "Utilisation du <b>Triplanar Mapping</b> pour peindre un terrain réaliste", en: "Use of <b>Triplanar Mapping</b> to paint a realistic terrain" }),
+        ],
+        enabled: true
+    },
+    {
         title: S({ fr: "Visualisation de la popularité des prénoms", en: "Birth Name Popularity Visualization" }),
         url: "https://github.com/BarthPaleologue/BirthNameViz",
         when: S({ fr: "Juin 2023 à Telecom Paris", en: "June 2023 at Telecom Paris" }),
@@ -18,17 +29,28 @@ export const experiences: Experience[] = [
             S({ fr: "<b>Optimisation</b> des données pour des <b>intéractions instantannées</b>", en: "<b>Optimization</b> of data for <b>instant interactions</b>" }),
             S({ fr: "<b>Organisation du travail</b> d&apos;équipe avec <b>Git</b> et les <b>soft skills</b>", en: "<b>Teamwork organization</b> with <b>Git</b> and <b>soft skills</b>" })
         ],
-        enabled: true
+        enabled: false
     },
     {
-        title: S({fr: "Pipeline de simulation et rendu de fluide 3D", en: "3D Fluid Simulation and Rendering Pipeline"}),
+        title: S({ fr: "Pipeline de simulation et rendu de fluide 3D", en: "3D Fluid Simulation and Rendering Pipeline" }),
         url: "https://github.com/Konodinger/Liquid3D",
         when: S({ fr: "Avril 2023 - Juin 2023 à Telecom Paris", en: "April 2023 - June 2023 at Telecom Paris" }),
         what: [
             S({ fr: "Simulation du fluide 3D en <b>C++</b> basé sur un <b>papier de recherche</b>", en: "3D fluid simulation in <b>C++</b> based on a <b>research paper</b>" }),
             S({ fr: "Utilisation de la librairie <b>OpenVDB</b> pour la transformation en volume", en: "Use of the <b>OpenVDB</b> library for volume transformation" }),
             S({ fr: "Utilisation de <b>Blender Cycles</b> pour le rendu final", en: "Use of <b>Blender Cycles</b> for the final rendering" }),
-            S({ fr: "Utilisation des <b>soft skills</b> pour faciliter le <b>travail en équipe</b>", en: "Use of <b>soft skills</b> to facilitate <b>teamwork</b>" })
+            //S({ fr: "Utilisation des <b>soft skills</b> pour faciliter le <b>travail en équipe</b>", en: "Use of <b>soft skills</b> to facilitate <b>teamwork</b>" })
+        ],
+        enabled: true
+    },
+    {
+        title: S({fr: "Moteur 3D avec rendu temps réel", en: "3D Engine with Real-Time Rendering"}),
+        url: "https://github.com/BarthPaleologue/feather",
+        when: S({fr: "Octobre 2022 - Octobre 2023", en: "October 2022 - October 2023"}),
+        what: [
+            S({fr: "Utilisation de <b>C++</b> et <b>OpenGL</b> pour le rendu", en: "Use of <b>C++</b> and <b>OpenGL</b> for rendering"}),
+            S({fr: "Pipeline de <b>post-traitement</b> configurable", en: "Configurable <b>post-processing</b> pipeline"}),
+            S({fr: "Support du <b>normal mapping</b>", en: "<b>Normal mapping</b> support"}),
         ],
         enabled: true
     },
@@ -47,8 +69,8 @@ export const experiences: Experience[] = [
         url: "https://github.com/BarthPaleologue/Paint4D",
         when: S({ fr: "Janvier 2023 - Mars 2023 à Telecom Paris", en: "January 2023 - March 2023 at Telecom Paris" }),
         what: [
-            S({ fr: "Conception avec Qt et C++ d'une interface intuitive", en: "Design with Qt and C++ of an intuitive interface" }),
-            S({ fr: "Utilisation de <b>Git</b> pour le travail d'équipe", en: "Use of <b>Git</b> for teamwork" })
+            S({ fr: "Conception avec <b>Qt</b> et <b>C++</b> d'une interface graphique", en: "Design with <b>Qt</b> and <b>C++</b> of an intuitive interface" }),
+            S({ fr: "Système de <b>sauvegarde</b> du travail de l'utilisateur", en: "User <b>work saving</b> system" }),
         ],
         enabled: false
     },
@@ -93,7 +115,7 @@ export const experiences: Experience[] = [
             S({ fr: "GUI intuitive et polyvalente avec <b>Swing</b>", en: "Intuitive and versatile GUI with <b>Swing</b>" }),
             S({ fr: "Génération de labyrinthe basée sur <b>l&apos;algorithme de Prim</b>", en: "Maze generation based on <b>Prim&apos;s algorithm</b>" })
         ],
-        enabled: true
+        enabled: false
     },
     {
         title: S({ fr: "Site Web pour le forum de Télécom Paris", en: "Telecom Paris Forum Website" }),
@@ -142,10 +164,10 @@ export const experiences: Experience[] = [
         url: "https://github.com/BarthPaleologue/EdelGAN",
         when: S({ fr: "Octobre 2019 - Juillet 2020", en: "October 2019 - July 2020" }),
         what: [
-            S({fr: "Manipulation d'images avec Pillow", en: "Image manipulation with Pillow"}),
-            S({fr: "Processing des données avec numpy", en: "Data processing with numpy"}),
-            S({fr: "Création du réseau avec Keras", en: "Creation of the network with Keras"}),
-            S({fr: "Utilisation de Jupyter Notebook", en: "Use of Jupyter Notebook"})
+            S({ fr: "Manipulation d'images avec Pillow", en: "Image manipulation with Pillow" }),
+            S({ fr: "Processing des données avec numpy", en: "Data processing with numpy" }),
+            S({ fr: "Création du réseau avec Keras", en: "Creation of the network with Keras" }),
+            S({ fr: "Utilisation de Jupyter Notebook", en: "Use of Jupyter Notebook" })
         ],
         enabled: false
     },

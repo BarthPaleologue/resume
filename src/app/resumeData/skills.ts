@@ -20,15 +20,16 @@ export const skills: SkillList[] = [
             { title: "Git", yoe: 6 },
             { title: "Soft skills" },
             { title: S({ fr: "Accessibilité", en: "Accessibility" }), yoe: 3 },
-            { title: S({ fr: "Enjeux RSE", en: "CSR issues" }), yoe: 2 },
+            { title: S({ fr: "Enjeux RSE", en: "CSR issues" }), yoe: 2, hidden: true },
         ]
     },
     {
         title: S({ fr: "Graphismes", en: "Graphics" }),
         skills: [
             { title: "WebGL BabylonJS", yoe: 8 },
-            { title: "D3.JS, Altair, Tableau", yoe: 1 },
-            { title: "Blender", yoe: 1, hidden: true },
+            { title: "Unity C#", yoe: 1 },
+            { title: "D3.JS, Altair, Tableau", yoe: 1, hidden: true },
+            { title: "Blender", yoe: 1, hidden: false },
             { title: "OpenVDB C++", yoe: 1 },
         ]
     },
@@ -38,7 +39,8 @@ export const skills: SkillList[] = [
             { title: "HTML, CSS, JS", yoe: 9 },
             { title: "C, C++, Qt", yoe: 5 },
             { title: "React, Typescript", yoe: 4 },
-            { title: "Webpack", yoe: 3 },
+            { title: "Python", yoe: 7 },
+            { title: "Webpack", yoe: 3, hidden: true },
             { title: "Rust, WebAssembly", yoe: 2 },
             { title: "Java, Kotlin", yoe: 2 },
             { title: "Django, NextJS", yoe: 1, hidden: true },

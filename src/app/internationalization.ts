@@ -3,7 +3,7 @@ export enum Lang {
     EN = 'en'
 }
 
-export let currentLang = Lang.EN;
+export let currentLang = Lang.FR;
 
 export function YoE(y: number): string {
     switch (currentLang) {
