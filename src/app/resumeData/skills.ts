@@ -36,7 +36,7 @@ export const skills: SkillList[] = [
     {
         title: S({ fr: "Programmation", en: "Programming" }),
         skills: [
-            { title: "HTML, CSS, JS", yoe: 9 },
+            { title: "HTML, CSS, NodeJS", yoe: 9 },
             { title: "C, C++, Qt", yoe: 5 },
             { title: "React, Typescript", yoe: 4 },
             { title: "Python", yoe: 7 },

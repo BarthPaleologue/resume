@@ -15,10 +15,11 @@ export const experiences: Experience[] = [
         when: S({ fr: "Septembre 2023 - Octobre 2023 à Telecom Paris", en: "September 2023 - October 2023 at Telecom Paris" }),
         what: [
             S({ fr: "Utilisation approfondie du <b>moteur 3D Unity</b>", en: "In-depth use of the <b>Unity 3D Engine</b>" }),
+            S({ fr: "Apprentissage par <b>algorithmes génétiques</b>", en: "Machine Learning with <b>genetic algorithms</b>" }),
             S({ fr: "Animation procédurale avec <b>Cinématique Inverse</b>", en: "Procedural animation with <b>Inverse Kinematics</b>" }),
             S({ fr: "Utilisation du <b>Triplanar Mapping</b> pour peindre un terrain réaliste", en: "Use of <b>Triplanar Mapping</b> to paint a realistic terrain" }),
         ],
-        enabled: true
+        enabled: false
     },
     {
         title: S({ fr: "Visualisation de la popularité des prénoms", en: "Birth Name Popularity Visualization" }),
@@ -29,7 +30,7 @@ export const experiences: Experience[] = [
             S({ fr: "<b>Optimisation</b> des données pour des <b>intéractions instantannées</b>", en: "<b>Optimization</b> of data for <b>instant interactions</b>" }),
             S({ fr: "<b>Organisation du travail</b> d&apos;équipe avec <b>Git</b> et les <b>soft skills</b>", en: "<b>Teamwork organization</b> with <b>Git</b> and <b>soft skills</b>" })
         ],
-        enabled: false
+        enabled: true
     },
     {
         title: S({ fr: "Pipeline de simulation et rendu de fluide 3D", en: "3D Fluid Simulation and Rendering Pipeline" }),
@@ -48,9 +49,9 @@ export const experiences: Experience[] = [
         url: "https://github.com/BarthPaleologue/feather",
         when: S({fr: "Octobre 2022 - Octobre 2023", en: "October 2022 - October 2023"}),
         what: [
-            S({fr: "Utilisation de <b>C++</b> et <b>OpenGL</b> pour le rendu", en: "Use of <b>C++</b> and <b>OpenGL</b> for rendering"}),
+            S({fr: "Utilisation avancée de <b>C++</b> et <b>OpenGL</b> pour le rendu", en: "Advanced <b>C++</b> and <b>OpenGL</b> for rendering"}),
             S({fr: "Pipeline de <b>post-traitement</b> configurable", en: "Configurable <b>post-processing</b> pipeline"}),
-            S({fr: "Support du <b>normal mapping</b>", en: "<b>Normal mapping</b> support"}),
+            S({fr: "Support des <b>compute shaders</b>", en: "<b>Compute Shader</b> support"}),
         ],
         enabled: true
     },
@@ -89,8 +90,8 @@ export const experiences: Experience[] = [
         url: S({ fr: "https://www.ls2n.fr/", en: "https://www.ls2n.fr/?lang=en" }),
         when: S({ fr: "Août 2022 à Nantes", en: "August 2022 in Nantes" }),
         what: [
-            S({ fr: "Coopération en <b>méthode agile</b> avec un chercheur", en: "<b>Agile method</b> <b>cooperation</b> with a researcher" }),
-            S({ fr: "Conception d'une visualisation interactive avec <b>Pygame</b>", en: "Design of an interactive visualization with <b>Pygame</b>" }),
+            S({ fr: "Coopération en <b>méthode agile</b> avec un chercheur", en: "<b>Agile cooperation</b> with a researcher" }),
+            S({ fr: "Conception d'une <b>visualisation interactive</b> avec <b>Pygame</b>", en: "Design of an <b>interactive visualization</b> with <b>Pygame</b>" }),
             //S({ fr: "Création d'une <b>représentation innovante</b> pour les structure de treillis", en: "Creation of an <b>innovative representation</b> for truss structures" })
         ],
         enabled: true
@@ -100,9 +101,10 @@ export const experiences: Experience[] = [
         url: "https://medium.com/@barth_29567/procedural-gas-giants-f2a61bc6bd97",
         when: S({ fr: "Juin 2021 - Aujourd'hui", en: "June 2021 - Today" }),
         what: [
-            S({ fr: "Utilisation de <b>Rust</b> et <b>WASM</b> pour des performances maximales", en: "Use of <b>Rust</b> and <b>WASM</b> for maximum performance" }),
+            S({ fr: "Utilisation avancée de <b>Typescript</b>, <b>Rust</b> et <b>WebAssembly</b>", en: "Advanced <b>Typescript</b>, <b>Rust</b> and <b>WebAssembly</b>" }),
             S({ fr: "Conception d'effets visuels en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of visual effects in <b>GLSL</b> (atmosphere, clouds...)" }),
-            S({ fr: "Modélisation d'objets sur <b>Blender</b>", en: "Modeling of objects on <b>Blender</b>" }),
+            S({ fr: "Modélisation d'objets sur <b>Blender</b>", en: "3D Modeling with <b>Blender</b>" }),
+            S({ fr: "Architecture avancée avec <b>NodeJS</b> et <b>Webpack</b>", en: "Advanced architecture with <b>NodeJS</b> and <b>Webpack</b>" }),
             //S({ fr: "Organisation d'un projet très vaste sur le schéma <b>MVC</b>", en: "Organization of a very large project on the <b>MVC</b> scheme" })
         ],
         enabled: true
