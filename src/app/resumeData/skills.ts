@@ -19,7 +19,7 @@ export const skills: SkillList[] = [
         skills: [
             { title: "Git", yoe: 7 },
             { title: "Soft skills" },
-            { title: S({ fr: "Accessibilité", en: "Accessibility" }), yoe: 4 },
+            { title: S({ fr: "Accessibilité", en: "Accessibility" }), yoe: 3 },
             { title: S({ fr: "Enjeux RSE", en: "CSR issues" }), yoe: 2, hidden: true },
         ]
     },
