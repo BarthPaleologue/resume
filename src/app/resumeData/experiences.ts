@@ -14,9 +14,9 @@ export const experiences: Experience[] = [
         url: "https://www.barco.com/fr",
         when: S({ fr: "Avril 2024 - Septembre 2024 à Barco, Kortrijk", en: "April 2024 - September 2024 at Barco, Kortrijk" }),
         what: [
-            S({ fr: "Travail de <b>R&D</b> avec une <b>équipe</b> en <b>anglais</b>", en: "R&D team work in english" }),
-            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>JavaScript</b>", en: "XR development with Vision Pro and Quest Pro using <b>C++ and Javascript</b>" }),
-            S({ fr: "Création de <b>Gaussian Splatting</b> 3D et 4D pour <b>écrans multi-vues</b>", en: "Creation of 3D and 4D Gaussian Splatting for multi-view screens" }),
+            S({ fr: "Travail de <b>R&D</b> avec une <b>équipe</b> en <b>anglais</b>", en: "R&D <b>team work</b> in <b>english</b>" }),
+            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>JavaScript</b>", en: "<b>XR</b> development with <b>Vision Pro</b> and <b>Quest Pro</b> using <b>C++ and Javascript</b>" }),
+            S({ fr: "Création de <b>Gaussian Splatting</b> 3D et 4D pour <b>écrans multi-vues</b>", en: "Creation of 3D and 4D <b>Gaussian Splatting</b> for <b>multi-view screens</b>" }),
             S({ fr: "Multiples <b>démonstrations</b> des résultats <b>devant des clients</b>", en: "Multiple <b>demonstrations in front of clients</b>" })
         ],
         enabled: true
@@ -29,7 +29,6 @@ export const experiences: Experience[] = [
             S({ fr: "Utilisation avancée de <b>C++</b> et <b>OpenGL</b> pour le rendu", en: "Advanced <b>C++</b> and <b>OpenGL</b> for rendering" }),
             S({ fr: "Implémentation des papiers <b>XPBD et HPBD</b> pour la physique", en: "Implemented <b>XPBD and HPBD</b> papers for physics" }),
             S({ fr: "Pipeline de <b>traitement des images</b> configurable", en: "Configurable <b>image-processing</b> pipeline" }),
-            //S({fr: "Support des <b>compute shaders</b>", en: "<b>Compute Shader</b> support"}),
         ],
         enabled: true
     },
@@ -63,7 +62,7 @@ export const experiences: Experience[] = [
         what: [
             S({ fr: "Aggrégation et curation d'un <b>grand dataset</b> avec <b>pandas</b>", en: "Aggregation and curation of a <b>large dataset</b> with <b>pandas</b>" }),
             S({ fr: "<b>Fine tuning</b> de <b>Yolo</b> sur le dataset avec <b>Google Colab</b>", en: "<b>Fine tuning</b> of <b>Yolo</b> on the dataset with <b>Google Colab</b>" }),
-            S({ fr: "Inférence <b>temps réel</b> avec <b>haute précision</b>", en: "<b>Real-time</b> inference with <b>high accuracy</b>" })
+            S({ fr: "Inférence <b>temps réel</b> sur <b>flux vidéo</b> avec <b>haute précision</b>", en: "<b>Real-time</b> inference on <b>video stream</b> with <b>high accuracy</b>" })
         ],
         enabled: true
     },
@@ -126,7 +125,7 @@ export const experiences: Experience[] = [
         when: S({ fr: "Juin 2021 - Aujourd'hui", en: "June 2021 - Today" }),
         what: [
             S({ fr: "<b>Génération procédurale</b> de <b>système solaires</b> entiers avec <b>BabylonJS</b>", en: "<b>Procedural generation</b> of entire <bsolar systems</b> with <b>BabylonJS</b>" }),
-            S({ fr: "Conception d'<b>effets visuels avancés</b> en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of visual effects in <b>GLSL</b> (atmosphere, clouds...)" }),
+            S({ fr: "Conception d'<b>effets visuels avancés</b> en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of <b>advanced visual effects</b> in <b>GLSL</b> (atmosphere, clouds...)" }),
             //S({ fr: "Utilisation avancée de <b>Typescript</b>, <b>Rust</b> et <b>WebAssembly</b>", en: "Advanced <b>Typescript</b>, <b>Rust</b> and <b>WebAssembly</b>" }),
             S({ fr: "Animation de personnage avec <b>Blender</b> et <b>Mixamo</b>", en: "Character animation with <b>Blender</b> and <b>Mixamo</b>" }),
             //S({ fr: "Architecture avancée avec <b>NodeJS</b> et <b>Webpack</b>", en: "Advanced architecture with <b>NodeJS</b> and <b>Webpack</b>" }),
