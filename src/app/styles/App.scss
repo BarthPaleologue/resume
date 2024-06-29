@@ -69,7 +69,7 @@ body {
       flex: 1;
       margin-top: 106px;
       min-width: 200px;
-      background: darken(beige, 5);
+      background: lighten($header-background, 50);
       border-radius: $border-radius;
       //padding-bottom: 10px;
     }
@@ -190,7 +190,7 @@ section {
       row-gap: 5px;
       margin-block: 0;
       padding-inline-start: 20px;
-      list-style-type: disclosure-closed;
+      list-style-type: circle;
     }
   }
 }
