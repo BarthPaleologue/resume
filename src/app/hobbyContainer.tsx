@@ -8,7 +8,7 @@ interface HobbyContainerProps {
 
 export const HobbyContainer = ({ hobby }: HobbyContainerProps) => {
     return (
-        <p key={hobby.title}>{hobby.title} {hobby.yoe ? `(${YoE(hobby.yoe)})` : ''}</p>
+        <p key={hobby.title}>{hobby.icon} {hobby.title} {hobby.yoe ? `(${YoE(hobby.yoe)})` : ''}</p>
     )
 }
 
