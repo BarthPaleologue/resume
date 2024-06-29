@@ -14,7 +14,7 @@ export const Header = () => {
       <div className="namePanel">
         <h1>Barthélemy Paléologue</h1>
         <p>{currentLang === Lang.FR ?
-          "A la recherche d'un travail d'ingénieur en informatique graphique" :
+          "A la recherche d'un poste d'ingénieur en informatique graphique" :
           "Looking for a job as a computer graphics engineer"}</p>
       </div>
     </header>
