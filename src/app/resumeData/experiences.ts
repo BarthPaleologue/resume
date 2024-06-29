@@ -15,9 +15,9 @@ export const experiences: Experience[] = [
         when: S({ fr: "Avril 2024 - Septembre 2024 à Barco, Kortrijk", en: "April 2024 - September 2024 at Barco, Kortrijk" }),
         what: [
             S({ fr: "Travail de <b>R&D</b> avec une <b>équipe</b> en <b>anglais</b>", en: "R&D team work in english" }),
-            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>JS</b>", en: "XR development with Vision Pro and Quest Pro" }),
+            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>JavaScript</b>", en: "XR development with Vision Pro and Quest Pro using <b>C++ and Javascript</b>" }),
             S({ fr: "Création de <b>Gaussian Splatting</b> 3D et 4D pour <b>écrans multi-vues</b>", en: "Creation of 3D and 4D Gaussian Splatting for multi-view screens" }),
-            S({ fr: "<b>Démonstration</b> des résultats devant des clients", en: "<b>Demonstration</b> in front of clients" })
+            S({ fr: "Multiples <b>démonstrations</b> des résultats <b>devant des clients</b>", en: "Multiple <b>demonstrations in front of clients</b>" })
         ],
         enabled: true
     },
@@ -57,6 +57,17 @@ export const experiences: Experience[] = [
         enabled: false
     },
     {
+        title: S({ fr: "Lecture de plaques d'immatriculation par IA temps réel", en: "License plate reading with real-time AI" }),
+        url: "https://github.com/BarthPaleologue/ALPR",
+        when: S({ fr: "Octobre 2023 - Décembre 2023 à Telecom Paris", en: "October 2023 - December 2023 at Telecom Paris" }),
+        what: [
+            S({ fr: "Aggrégation et curation d'un <b>grand dataset</b> avec <b>pandas</b>", en: "Aggregation and curation of a <b>large dataset</b> with <b>pandas</b>" }),
+            S({ fr: "<b>Fine tuning</b> de <b>Yolo</b> sur le dataset avec <b>Google Colab</b>", en: "<b>Fine tuning</b> of <b>Yolo</b> on the dataset with <b>Google Colab</b>" }),
+            S({ fr: "Inférence <b>temps réel</b> avec <b>haute précision</b>", en: "<b>Real-time</b> inference with <b>high accuracy</b>" })
+        ],
+        enabled: true
+    },
+    {
         title: S({ fr: "Pipeline de simulation et rendu de fluide 3D", en: "3D Fluid Simulation and Rendering Pipeline" }),
         url: "https://github.com/Konodinger/Liquid3D",
         when: S({ fr: "Avril 2023 - Juin 2023 à Telecom Paris", en: "April 2023 - June 2023 at Telecom Paris" }),
@@ -66,7 +77,7 @@ export const experiences: Experience[] = [
             S({ fr: "Utilisation de <b>Blender Cycles</b> pour le rendu final", en: "Use of <b>Blender Cycles</b> for the final rendering" }),
             //S({ fr: "Utilisation des <b>soft skills</b> pour faciliter le <b>travail en équipe</b>", en: "Use of <b>soft skills</b> to facilitate <b>teamwork</b>" })
         ],
-        enabled: true
+        enabled: false
     },
     {
         title: S({ fr: "Application de Todo List", en: "Todo List Application" }),
@@ -114,7 +125,7 @@ export const experiences: Experience[] = [
         url: "https://youtu.be/5pXZqHRShTE",
         when: S({ fr: "Juin 2021 - Aujourd'hui", en: "June 2021 - Today" }),
         what: [
-            S({ fr: "<b>Génération procédurale</b> de <b>système solaires</b> entiers avec <b>BabylonJS</b>", en: "<b>Procedural generation</b> of entire <bsolar systems</b> with <b>BabylonJS</b>"}),
+            S({ fr: "<b>Génération procédurale</b> de <b>système solaires</b> entiers avec <b>BabylonJS</b>", en: "<b>Procedural generation</b> of entire <bsolar systems</b> with <b>BabylonJS</b>" }),
             S({ fr: "Conception d'<b>effets visuels avancés</b> en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of visual effects in <b>GLSL</b> (atmosphere, clouds...)" }),
             //S({ fr: "Utilisation avancée de <b>Typescript</b>, <b>Rust</b> et <b>WebAssembly</b>", en: "Advanced <b>Typescript</b>, <b>Rust</b> and <b>WebAssembly</b>" }),
             S({ fr: "Animation de personnage avec <b>Blender</b> et <b>Mixamo</b>", en: "Character animation with <b>Blender</b> and <b>Mixamo</b>" }),
