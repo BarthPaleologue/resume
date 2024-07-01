@@ -76,9 +76,13 @@ body {
       flex: 1;
       margin-top: 106px;
       min-width: 200px;
-      background: lighten($header-background, 50);
       border-radius: $border-radius;
       //padding-bottom: 10px;
+
+      &>section {
+        background: lighten($header-background, 50);
+        padding-bottom: 5px;
+      }
     }
   }
 }

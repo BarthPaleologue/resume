@@ -27,7 +27,7 @@ export const experiences: Experience[] = [
         when: S({ fr: "Novembre 2023 - Février 2024 à Telecom Paris", en: "November 2023 - February 2024 at Telecom Paris" }),
         what: [
             S({ fr: "Utilisation avancée de <b>C++</b> et <b>OpenGL</b> pour le rendu", en: "Advanced <b>C++</b> and <b>OpenGL</b> for rendering" }),
-            S({ fr: "Implémentation des papiers <b>XPBD et HPBD</b> pour la physique", en: "Implemented <b>XPBD and HPBD</b> papers for physics" }),
+            S({ fr: "Implémentation des papiers <b>XPBD</b> et <b>HPBD</b> pour la physique", en: "Implemented <b>XPBD and HPBD</b> papers for physics" }),
             S({ fr: "Pipeline de <b>traitement des images</b> configurable", en: "Configurable <b>image-processing</b> pipeline" }),
         ],
         enabled: true
@@ -35,7 +35,7 @@ export const experiences: Experience[] = [
     {
         title: S({ fr: "Simulation d'écosystème", en: "Ecosystem Simulation" }),
         url: "https://github.com/BarthPaleologue/inf633-2023-2024",
-        when: S({ fr: "Septembre 2023 - Octobre 2023 à Polytechnique", en: "September 2023 - October 2023 at Institut Polytechnique de Paris" }),
+        when: S({ fr: "Septembre 2023 - Octobre 2023 à Polytechnique", en: "September 2023 - October 2023 at Polytechnique" }),
         what: [
             S({ fr: "Utilisation approfondie du <b>moteur 3D Unity</b>", en: "In-depth use of the <b>Unity 3D Engine</b>" }),
             S({ fr: "Apprentissage par <b>algorithmes génétiques</b>", en: "Machine Learning with <b>genetic algorithms</b>" }),
@@ -122,7 +122,7 @@ export const experiences: Experience[] = [
     {
         title: S({ fr: "Cosmos Journeyer", en: "Cosmos Journeyer" }),
         url: "https://cosmosjourneyer.com",
-        when: S({ fr: "Juin 2021 - Aujourd'hui en autonomie", en: "June 2021 - Today on my own" }),
+        when: S({ fr: "Juin 2021 - Aujourd'hui (en autonomie)", en: "June 2021 - Today (on my own)" }),
         what: [
             S({ fr: "<b>Génération procédurale</b> de <b>système solaires</b> entiers avec <b>BabylonJS</b>", en: "<b>Procedural generation</b> of entire <bsolar systems</b> with <b>BabylonJS</b>" }),
             S({ fr: "Conception d'<b>effets visuels avancés</b> en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of <b>advanced visual effects</b> in <b>GLSL</b> (atmosphere, clouds...)" }),

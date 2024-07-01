@@ -15,14 +15,14 @@ export type SkillList = {
 
 export const skills: SkillList[] = [
     {
-        title: S({ fr: "Humain", en: "Human" }),
+        title: S({ fr: "Humaines", en: "Human" }),
         skills: [
             { title: S({ fr: "Communication non violente", en: "Non-violent communication" })},
             { title: S({ fr: "Esprit d'équipe et autonomie", en: "Teamwork / Autonomy" })},
         ]
     },
     {
-        title: S({ fr: "Général", en: "General" }),
+        title: S({ fr: "Générales", en: "General" }),
         skills: [
             { title: "Git", yoe: 7 },
             { title: S({ fr: "Accessibilité", en: "Accessibility" }), yoe: 3 },

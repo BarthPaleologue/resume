@@ -9,12 +9,12 @@ export type Formation = {
 
 export const formations: Formation[] = [
     {
-        title: S({ fr: "Diplôme d'Ingénieur à Telecom Paris / Polytechnique", en: "Master's Degree at Telecom Paris" }),
+        title: S({ fr: "Diplôme d'Ingénieur à l'Institut Polytechnique de Paris", en: "Master's Degree at Telecom Paris" }),
         url: S({ fr: "https://www.ip-paris.fr/", en: "https://www.ip-paris.fr/en" }),
         when: S({ fr: "Septembre 2021 à Juillet 2024 à Paris", en: "September 2021 to July 2024 in Paris" }),
         what: S({
-            fr: "Formation généraliste spécialisée en <b>informatique graphique</b> et <b>science des données</b> dans la <b>meilleure école</b> Française sur le numérique.",
-            en: "Generalist training specialized in <b>computer graphics</b> and <b>data science</b> in the <b>best French school</b> in the digital field."
+            fr: "Master sélectif généraliste spécialisé en <b>informatique graphique</b> et <b>science des données</b> à <b>Télécom Paris</b> (n°1 sur le numérique) en M1 puis à <b>l'X</b> en M2.",
+            en: "Selective generalist master's degree specialized in <b>computer graphics</b> and <b>data science</b> at <b>Télécom Paris</b> (n°1 in digital) in M1 then at <b>l'X</b> in M2."
         })
     },
     {
