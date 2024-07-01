@@ -8,6 +8,9 @@ header {
 
     background: $gradient-background;
 
+    flex: 0 1 auto; /* default, element does not grow */
+
+
     padding: 10px;
     box-sizing: border-box;
 

@@ -15,21 +15,27 @@ export type SkillList = {
 
 export const skills: SkillList[] = [
     {
+        title: S({ fr: "Humain", en: "Human" }),
+        skills: [
+            { title: S({ fr: "Communication non violente", en: "Non-violent communication" })},
+            { title: S({ fr: "Esprit d'équipe et autonomie", en: "Teamwork / Autonomy" })},
+        ]
+    },
+    {
         title: S({ fr: "Général", en: "General" }),
         skills: [
             { title: "Git", yoe: 7 },
-            { title: "Soft skills" },
             { title: S({ fr: "Accessibilité", en: "Accessibility" }), yoe: 3 },
             { title: S({ fr: "Enjeux RSE", en: "CSR issues" }), yoe: 2, hidden: true },
         ]
     },
     {
-        title: S({ fr: "Graphismes", en: "Graphics" }),
+        title: S({ fr: "Rendu 3D", en: "3D Rendering" }),
         skills: [
             { title: "ThreeJS / BabylonJS", yoe: 8 },
             { title: "Unity C#", yoe: 1 },
             { title: "D3.JS, Altair, Tableau", yoe: 1, hidden: true },
-            { title: "Blender", yoe: 1, hidden: false },
+            { title: "Blender", yoe: 1, hidden: true },
             { title: "OpenVDB C++", yoe: 1, hidden: true },
             { title: "OpenGL", yoe: 3 },
         ]
@@ -37,13 +43,12 @@ export const skills: SkillList[] = [
     {
         title: S({ fr: "Programmation", en: "Programming" }),
         skills: [
-            { title: "HTML, CSS, NodeJS", yoe: 9 },
             { title: "C, C++, Qt", yoe: 5 },
-            { title: "React, Typescript", yoe: 4 },
+            { title: "JavaScript / TS", yoe: 9 },
             { title: "Python / Data Science", yoe: 6 },
             { title: "Webpack", yoe: 3, hidden: true },
-            { title: "Rust, WebAssembly", yoe: 2 },
-            { title: "Java, Kotlin", yoe: 2 },
+            { title: "Rust / WASM", yoe: 2 },
+            { title: "Java, Kotlin", yoe: 2, hidden: true },
             { title: "Django, NextJS", yoe: 1, hidden: true },
         ]
     },

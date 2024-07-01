@@ -4,7 +4,6 @@ export type Language = {
     title: string,
     icon?: string,
     level: string,
-    hidden?: boolean
 }
 
 export const languages: Language[] = [
@@ -19,14 +18,13 @@ export const languages: Language[] = [
         level: "C1"
     },
     {
+        title: S({ fr: "Espagnol", en: "Spanish" }),
+        icon: "🇪🇸",
+        level: "B1"
+    },
+    {
         title: S({ fr: "Japonais", en: "Japanese" }),
         icon: "🇯🇵",
         level: "B1"
     },
-    {
-        title: S({ fr: "Espagnol", en: "Spanish" }),
-        icon: "🇪🇸",
-        level: "A2",
-        hidden: true
-    }
 ];

@@ -15,7 +15,7 @@ export const experiences: Experience[] = [
         when: S({ fr: "Avril 2024 - Septembre 2024 à Barco, Kortrijk", en: "April 2024 - September 2024 at Barco, Kortrijk" }),
         what: [
             S({ fr: "Travail de <b>R&D</b> avec une <b>équipe</b> en <b>anglais</b>", en: "R&D <b>team work</b> in <b>english</b>" }),
-            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>JavaScript</b>", en: "<b>XR</b> development with <b>Vision Pro</b> and <b>Quest Pro</b> using <b>C++ and Javascript</b>" }),
+            S({ fr: "Développement <b>XR</b> avec <b>Vision Pro</b> et <b>Quest Pro</b> en <b>C++</b> et <b>TypeScript</b>", en: "<b>XR</b> development with <b>Vision Pro</b> and <b>Quest Pro</b> using <b>C++ and TypeScript</b>" }),
             S({ fr: "Création de <b>Gaussian Splatting</b> 3D et 4D pour <b>écrans multi-vues</b>", en: "Creation of 3D and 4D <b>Gaussian Splatting</b> for <b>multi-view screens</b>" }),
             S({ fr: "Multiples <b>démonstrations</b> des résultats <b>devant des clients</b>", en: "Multiple <b>demonstrations in front of clients</b>" })
         ],
@@ -35,7 +35,7 @@ export const experiences: Experience[] = [
     {
         title: S({ fr: "Simulation d'écosystème", en: "Ecosystem Simulation" }),
         url: "https://github.com/BarthPaleologue/inf633-2023-2024",
-        when: S({ fr: "Septembre 2023 - Octobre 2023 à Telecom Paris", en: "September 2023 - October 2023 at Telecom Paris" }),
+        when: S({ fr: "Septembre 2023 - Octobre 2023 à Polytechnique", en: "September 2023 - October 2023 at Institut Polytechnique de Paris" }),
         what: [
             S({ fr: "Utilisation approfondie du <b>moteur 3D Unity</b>", en: "In-depth use of the <b>Unity 3D Engine</b>" }),
             S({ fr: "Apprentissage par <b>algorithmes génétiques</b>", en: "Machine Learning with <b>genetic algorithms</b>" }),
@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
     {
         title: S({ fr: "Lecture de plaques d'immatriculation par IA temps réel", en: "License plate reading with real-time AI" }),
         url: "https://github.com/BarthPaleologue/ALPR",
-        when: S({ fr: "Octobre 2023 - Décembre 2023 à Telecom Paris", en: "October 2023 - December 2023 at Telecom Paris" }),
+        when: S({ fr: "Octobre 2023 - Décembre 2023 à Polytechnique", en: "October 2023 - December 2023 at Institut Polytechnique de Paris" }),
         what: [
             S({ fr: "Aggrégation et curation d'un <b>grand dataset</b> avec <b>pandas</b>", en: "Aggregation and curation of a <b>large dataset</b> with <b>pandas</b>" }),
             S({ fr: "<b>Fine tuning</b> de <b>Yolo</b> sur le dataset avec <b>Google Colab</b>", en: "<b>Fine tuning</b> of <b>Yolo</b> on the dataset with <b>Google Colab</b>" }),
@@ -121,8 +121,8 @@ export const experiences: Experience[] = [
     },
     {
         title: S({ fr: "Cosmos Journeyer", en: "Cosmos Journeyer" }),
-        url: "https://youtu.be/5pXZqHRShTE",
-        when: S({ fr: "Juin 2021 - Aujourd'hui", en: "June 2021 - Today" }),
+        url: "https://cosmosjourneyer.com",
+        when: S({ fr: "Juin 2021 - Aujourd'hui en autonomie", en: "June 2021 - Today on my own" }),
         what: [
             S({ fr: "<b>Génération procédurale</b> de <b>système solaires</b> entiers avec <b>BabylonJS</b>", en: "<b>Procedural generation</b> of entire <bsolar systems</b> with <b>BabylonJS</b>" }),
             S({ fr: "Conception d'<b>effets visuels avancés</b> en <b>GLSL</b> (atmosphère, nuages...)", en: "Design of <b>advanced visual effects</b> in <b>GLSL</b> (atmosphere, clouds...)" }),
