@@ -27,7 +27,7 @@ Start the development server with hot reloading:
 npm run start
 ```
 
-The application will be available at <http://localhost:3000>. Changes to the source files trigger an automatic rebuild.
+The application will be available at <http://localhost:3000/resume>. Changes to the source files trigger an automatic rebuild.
 
 ### Production build
 
