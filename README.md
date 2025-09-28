@@ -1,5 +1,7 @@
 # Resume Website
 
+![Example result](coverImage.png)
+
 This project is a Next.js application that renders a personal resume with support for French and English content. The resume content is stored as structured TypeScript modules so you can easily tailor the site to your own profile.
 
 ## Prerequisites
