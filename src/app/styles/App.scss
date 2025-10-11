@@ -79,7 +79,7 @@ body {
       border-radius: $border-radius;
       //padding-bottom: 10px;
 
-      &>section {
+      & > section {
         background: lighten($header-background, 50);
         padding-bottom: 5px;
       }
@@ -141,7 +141,7 @@ section {
   //justify-content: space-around;
   border-radius: $border-radius;
 
-  &>*:not(h2) {
+  & > *:not(h2) {
     padding: 0 5px;
   }
 
@@ -173,7 +173,7 @@ section {
     }
   }
 
-  &>div {
+  & > div {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
@@ -208,7 +208,7 @@ section {
   }
 }
 
-p>.icon {
+p > .icon {
   margin-right: 10px;
 }
 
