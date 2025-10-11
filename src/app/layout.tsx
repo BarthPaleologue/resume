@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { you } from "./resumeData/you";
 import { currentLang } from "./internationalization";
 
 export const metadata: Metadata = {
-  title: "Barthélemy Paléologue - Resume",
+  title: `${you.name} - Resume`,
   description: "My resume.",
-  applicationName: "Barthélemy Paléologue - Resume",
+  applicationName: `${you.name} - Resume`,
   robots: "index,follow",
   icons: {
     icon: { url: "/resume/static/profile.jpeg", type: "image/jpeg" },
