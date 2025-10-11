@@ -4,7 +4,7 @@ export type You = {
   name: string;
   phoneNumber: string;
   email: string;
-  onlinePortfolio?: string;
+  onlinePortfolio: string;
   location: string;
   lookingFor: string;
 };

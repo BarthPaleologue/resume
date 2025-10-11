@@ -1,6 +1,7 @@
 import React from "react";
 import { AccessLinkIcon } from "./accessLinkIcon";
 import { Experience, experiences } from "./resumeData/experiences";
+import { you } from "./resumeData/you";
 import { IS } from "./strings";
 
 export interface ExperienceContainerProps {
@@ -38,8 +39,8 @@ export const Experiences = ({}) => {
         <AccessLinkIcon
           text={IS.experience}
           inverted
-          url="https://barth.paleologue.fr"
-          title="Online Portfolio"
+          url={you.onlinePortfolio}
+          title={IS.onlinePortfolio}
         />
       </h2>
       {experiences.map((experience) => (
