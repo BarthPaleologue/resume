@@ -1,3 +1,3 @@
 export const settings = {
-    showPicture: true,
-}
+  showPicture: true,
+};
