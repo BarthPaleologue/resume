@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import profilePicture from "../../public/static/profile.jpeg";
-import { Lang, currentLang } from "./internationalization";
+import { you } from "./resumeData/you";
 import { settings } from "./resumeData/settings";
 
 export const Header = () => {
@@ -16,12 +16,8 @@ export const Header = () => {
         />
       </div>
       <div className="namePanel">
-        <h1>Barthélemy Paléologue</h1>
-        <p>
-          {currentLang === Lang.FR
-            ? "A la recherche d'un poste d'ingénieur en informatique graphique"
-            : "Looking for a position as a computer graphics engineer"}
-        </p>
+        <h1>{you.name}</h1>
+        <p>{you.lookingFor}</p>
       </div>
     </header>
   );
